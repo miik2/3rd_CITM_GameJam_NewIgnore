@@ -8,12 +8,15 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Vector3 hipsOffset;
     [SerializeField] private Vector3 chestOffset;
     [SerializeField] private GameObject gun;
-    private float lastTime = 0.0f;
-    public float waitTime = 2.0f;
+    private bool mustRespawn = false;
+    public float lastDeathTime = 0.0f;
+    public float respawnWait = 3.0f;
+    public float resetLevelWait = 6.0f;
 
     public int health;
     public float speed = 0.025f;
-    public Vector3 startingPosition;
+    public Vector3 startingPosition = Vector3.zero;
+    public Quaternion startingRotation = Quaternion.identity;
     public Transform target;
 
     private Animator animator;
@@ -32,10 +35,22 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (IsDead() || Input.GetKeyDown(KeyCode.R)) ResetCharacter();
-
-        if (Time.time >= lastTime + waitTime)
+        if (IsDead() || Input.GetKey(KeyCode.R))
         {
+            animator.SetBool("IsDead", true);
+            lastDeathTime = Time.time;
+            mustRespawn = true;
+        }
+
+        // Respawn in case it died
+        if (mustRespawn && Time.time >= lastDeathTime + respawnWait)
+        {
+            ResetCharacter();
+            mustRespawn = false;
+        }
+
+        if (Time.time >= lastDeathTime + resetLevelWait)
+        {       
             // Player movement
             Input_X = Input.GetAxis("Vertical");
             animator.SetFloat("Input_X", Input_X);
@@ -91,8 +106,12 @@ public class PlayerController : MonoBehaviour
 
     private void ResetCharacter()
     {
-        lastTime = Time.time;
+        health = maxHealth;
         transform.position = startingPosition;
+        transform.rotation = startingRotation;
+        animator.SetBool("IsDead", false);
+        animator.SetFloat("Input_X", 0.0f);
+        animator.SetFloat("Input_Z", 0.0f);
         // Clone code
     }
 
