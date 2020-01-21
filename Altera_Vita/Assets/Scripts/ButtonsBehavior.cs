@@ -4,17 +4,20 @@ using UnityEngine;
 
 public class ButtonsBehavior : MonoBehaviour
 {
-    void NewGame()
+    public Transition trans;
+
+    public void NewGame()
     {
+        trans.LoadNextLevel();
         
     }
 
-    void HowToPlay()
+    public void HowToPlay()
     {
 
     }
 
-    void Exit()
+    public void Exit()
     {
         Application.Quit();
     }
