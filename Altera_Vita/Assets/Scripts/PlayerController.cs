@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public int maxHealth = 100;
-    public int health;
-    public Vector3 startingPosition;
+    [SerializeField] private int maxHealth = 100;
+    [SerializeField] private Vector3 offset;
+    private float lastTime = 0.0f;
+    public float waitTime = 2.0f;
 
+    public int health;
+    public float speed = 0.025f;
+    public Vector3 startingPosition;
     public Transform target;
-    public Vector3 offset;
 
     private Animator animator;
     private Transform chest;
+    private float Input_X;
+    private float Input_Z;
 
     bool restarting = false;
 
@@ -25,33 +30,40 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (IsDead()) Reset();
+        if (IsDead() || Input.GetKeyDown(KeyCode.R)) Reset();
 
-        if (!restarting)
+        if (Time.time >= lastTime + waitTime)
         {
             // Player movement
+            Input_Z = Input.GetAxis("Vertical");
+            animator.SetFloat("Input_Z", Input_Z);
+
             if (Input.GetKey(KeyCode.W))
             {
-                transform.position += new Vector3(0, 0, 0.05f);
+                transform.position += new Vector3(0, 0, speed);
+                Input_Z = Input.GetAxis("Vertical");
+                animator.SetFloat("Input_Z", Input_Z);
             }
             if (Input.GetKey(KeyCode.S))
             {
-                transform.position += new Vector3(0, 0, -0.05f);
+                transform.position += new Vector3(0, 0, -speed);
+                Input_Z = Input.GetAxis("Vertical");
+                animator.SetFloat("Input_Z", Input_Z);
             }
             if (Input.GetKey(KeyCode.A))
             {
-                transform.position += new Vector3(-0.05f, 0, 0);
+                transform.position += new Vector3(-speed, 0, 0);
             }
             if (Input.GetKey(KeyCode.D))
             {
-                transform.position += new Vector3(0.05f, 0, 0);
+                transform.position += new Vector3(speed, 0, 0);
             }
         }
     }
 
     private void LateUpdate()
-    {
-        chest.LookAt(target.position);
+    {        
+        chest.LookAt(target);
         chest.rotation = chest.rotation * Quaternion.Euler(offset);
     }
 
@@ -63,6 +75,7 @@ public class PlayerController : MonoBehaviour
     private void Reset()
     {
         restarting = true;
+        lastTime = Time.time;
         transform.position = startingPosition;
         // Clone code
     }
