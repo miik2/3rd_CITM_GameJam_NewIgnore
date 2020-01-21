@@ -4,55 +4,84 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public int maxHealth = 100;
-    public int health;
-    public Vector3 startingPosition;
+    [SerializeField] private int maxHealth = 100;
+    [SerializeField] private Vector3 hipsOffset;
+    [SerializeField] private Vector3 chestOffset;
+    [SerializeField] private GameObject gun;
+    private float lastTime = 0.0f;
+    public float waitTime = 2.0f;
 
+    public int health;
+    public float speed = 0.025f;
+    public Vector3 startingPosition;
     public Transform target;
-    public Vector3 offset;
 
     private Animator animator;
     private Transform chest;
-
-    bool restarting = false;
+    private Transform hips;
+    private float Input_X;
+    private float Input_Z;
 
     void Start()
     {
         animator = gameObject.GetComponent<Animator>();
         chest = animator.GetBoneTransform(HumanBodyBones.Chest);
+        hips = animator.GetBoneTransform(HumanBodyBones.Hips);
         health = maxHealth;
     }
 
     void Update()
     {
-        if (IsDead()) Reset();
+        if (IsDead() || Input.GetKeyDown(KeyCode.R)) ResetCharacter();
 
-        if (!restarting)
+        if (Time.time >= lastTime + waitTime)
         {
             // Player movement
+            Input_X = Input.GetAxis("Vertical");
+            animator.SetFloat("Input_X", Input_X);
+            Input_Z = Input.GetAxis("Vertical");
+            animator.SetFloat("Input_Z", Input_Z);
+
             if (Input.GetKey(KeyCode.W))
             {
-                transform.position += new Vector3(0, 0, 0.05f);
+                transform.position += new Vector3(0, 0, speed);
+                Input_Z = Input.GetAxis("Vertical");
+                animator.SetFloat("Input_Z", Input_Z);
             }
             if (Input.GetKey(KeyCode.S))
             {
-                transform.position += new Vector3(0, 0, -0.05f);
+                transform.position += new Vector3(0, 0, -speed);
+                Input_Z = Input.GetAxis("Vertical");
+                animator.SetFloat("Input_Z", Input_Z);
             }
             if (Input.GetKey(KeyCode.A))
             {
-                transform.position += new Vector3(-0.05f, 0, 0);
+                transform.position += new Vector3(-speed, 0, 0);
+                Input_X = Input.GetAxis("Horizontal");
+                animator.SetFloat("Input_X", Input_X);
             }
             if (Input.GetKey(KeyCode.D))
             {
-                transform.position += new Vector3(0.05f, 0, 0);
+                transform.position += new Vector3(speed, 0, 0);
+                Input_X = Input.GetAxis("Horizontal");
+                animator.SetFloat("Input_X", Input_X);
+            }
+
+            // Player shoot
+            if (Input.GetMouseButtonDown(0))
+            {
+                gun.GetComponent<SpawnBullet>().Shoot();
             }
         }
     }
 
     private void LateUpdate()
-    {
-        chest.LookAt(target.position);
-        chest.rotation = chest.rotation * Quaternion.Euler(offset);
+    {        
+        chest.LookAt(target);
+        chest.rotation *= Quaternion.Euler(chestOffset);
+
+       // hips.LookAt(CalculateForwardTransform());        
+       // hips.rotation *= Quaternion.Euler(hipsOffset);
     }
 
     public bool IsDead()
@@ -60,10 +89,11 @@ public class PlayerController : MonoBehaviour
         return health <= 0;
     }
 
-    private void Reset()
+    private void ResetCharacter()
     {
-        restarting = true;
+        lastTime = Time.time;
         transform.position = startingPosition;
         // Clone code
     }
+
 }
