@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private int maxHealth = 100;
     [SerializeField] private Vector3 hipsOffset;
     [SerializeField] private Vector3 chestOffset;
+    [SerializeField] private GameObject gun;
     private float lastTime = 0.0f;
     public float waitTime = 2.0f;
 
@@ -20,8 +21,6 @@ public class PlayerController : MonoBehaviour
     private Transform hips;
     private float Input_X;
     private float Input_Z;
-
-    bool restarting = false;
 
     void Start()
     {
@@ -67,6 +66,12 @@ public class PlayerController : MonoBehaviour
                 Input_X = Input.GetAxis("Horizontal");
                 animator.SetFloat("Input_X", Input_X);
             }
+
+            // Player shoot
+            if (Input.GetMouseButtonDown(0))
+            {
+                gun.GetComponent<SpawnBullet>().Shoot();
+            }
         }
     }
 
@@ -86,7 +91,6 @@ public class PlayerController : MonoBehaviour
 
     private void ResetCharacter()
     {
-        restarting = true;
         lastTime = Time.time;
         transform.position = startingPosition;
         // Clone code
