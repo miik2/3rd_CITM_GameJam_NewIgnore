@@ -413,7 +413,7 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator Reloadinger()
     {
-        reloader.ReloadAnim();
+        //reloader.ReloadAnim();
         yield return new WaitForSeconds(1.5f);
         clip_ammo = max_clip_ammo;
     }
