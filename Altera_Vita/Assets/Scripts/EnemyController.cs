@@ -30,6 +30,9 @@ public class EnemyController : MonoBehaviour
 
     void Start()
     {
+        percieve = GetComponent<AIPercieve>();
+        perception_manager = GetComponent<AIPerceptionManager>();
+
         player = GameObject.Find("Player").GetComponent<PlayerController>();
         animator = gameObject.GetComponent<Animator>();
         health = maxHealth;
@@ -56,23 +59,32 @@ public class EnemyController : MonoBehaviour
 
     public bool ScanShotsFired()
     {
-        foreach (Shot_Collector.Shot shot_it in shotCollector.shotLocations)
-        {
-            Vector3 shot_pos = shot_it.author.transform.position;
-
-            if (LayerMask.LayerToName(shot_it.author.layer) == "Player" && Vector3.Distance(shot_pos, gameObject.transform.position) < percieve.hear_distance)
+        if (shotCollector == null)
+            shotCollector = GameObject.Find("GameController").GetComponent<Shot_Collector>();
+        else
+            foreach (Shot_Collector.Shot shot_it in shotCollector.shotLocations)
             {
-                last_location = shot_pos;
-                return true;
+                Vector3 shot_pos = new Vector3();
+                shot_pos = shot_it.author.transform.position;
+
+                if (LayerMask.LayerToName(shot_it.author.layer) == "Player" && Vector3.Distance(shot_pos, gameObject.transform.position) < percieve.hear_distance)
+                {
+                    if (Vector3.Distance(shot_pos, gameObject.transform.position) < percieve.hear_distance)
+                        last_location = shot_pos;
+
+                    return true;
+                }
             }
-        }
 
         return false;
     }
 
     public bool IsTargetDead()
     {
-        return target.GetComponent<PlayerController>().IsDead();
+        if (target != null)
+            return target.GetComponent<PlayerController>().IsDead();
+        else
+            return true;
     }
 
     public void FireAtTarget()

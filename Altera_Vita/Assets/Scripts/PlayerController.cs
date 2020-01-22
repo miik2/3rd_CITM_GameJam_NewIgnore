@@ -45,6 +45,8 @@ public class PlayerController : MonoBehaviour
 
     public Reload reloader;
 
+    private Shot_Collector shotCollector;
+
     [HideInInspector]
     public Animator animator;
     private Transform chest;
@@ -93,6 +95,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        shotCollector = GameObject.Find("GameController").GetComponent<Shot_Collector>();
         animator = gameObject.GetComponent<Animator>();
         chest = animator.GetBoneTransform(HumanBodyBones.Chest);
         hips = animator.GetBoneTransform(HumanBodyBones.Hips);
@@ -402,6 +405,7 @@ public class PlayerController : MonoBehaviour
                 clip_ammo--;
 
                 gun.GetComponent<SpawnBullet>().Shoot(Vector3.zero);
+                shotCollector.shotLocations.Add(new Shot_Collector.Shot(gameObject));
             }
             else if (Input.GetMouseButtonDown(0))
             {

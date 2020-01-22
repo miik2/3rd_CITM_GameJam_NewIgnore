@@ -33,12 +33,12 @@ public class AIPerceptionManager : MonoBehaviour {
         //AIPerceptionManager target_manager = ev.target.GetComponent<AIPerceptionManager>();
         if (ev.target != null)
         {
-            AIPercieve target_perception = ev.target.GetComponent<AIPercieve>();
+            //AIPercieve target_perception = ev.target.GetComponent<AIPercieve>();
 
             if (ev.type == global::PerceptionEvent.types.NEW)
             {
                 Debug.Log("FOUND: " + ev.target.name);
-                target_perception.spotted_by.Add(this.gameObject);
+                //target_perception.spotted_by.Add(this.gameObject);
 
                 if (controller.target == null
                     && LayerMask.LayerToName(ev.target.gameObject.layer) == "Player"
@@ -50,7 +50,7 @@ public class AIPerceptionManager : MonoBehaviour {
             else
             {
                 Debug.Log("LOST: " + ev.target.name);
-                target_perception.spotted_by.Remove(this.gameObject);
+                //target_perception.spotted_by.Remove(this.gameObject);
 
                 if (ev.target == controller.target)
                     if (!controller.ScanForPlayers())

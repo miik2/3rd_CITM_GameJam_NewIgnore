@@ -6,7 +6,7 @@ public class Shot_Collector : MonoBehaviour
 {
     public struct Shot
     {
-        Shot(GameObject author_)
+        public Shot(GameObject author_)
         {
             author = author_;
             started_at = Time.time;
@@ -21,7 +21,7 @@ public class Shot_Collector : MonoBehaviour
         }
     }
 
-    public List<Shot> shotLocations;
+    public List<Shot> shotLocations = new List<Shot>();
 
     // Start is called before the first frame update
     void Start()
