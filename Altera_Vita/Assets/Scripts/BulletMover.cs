@@ -53,13 +53,13 @@ public class BulletMover : MonoBehaviour
         if (owner == BulletType.PLAYER)
         if(!collision.transform.parent.CompareTag("Player"))
         {
-            Destroy(this);
+            Destroy(this.transform.parent);
         }
 
         if(owner == BulletType.ENEMY)
         if (!collision.transform.parent.CompareTag("Enemy"))
         {
-            Destroy(this);
+            Destroy(this.transform.parent);
         }
     }
 }
