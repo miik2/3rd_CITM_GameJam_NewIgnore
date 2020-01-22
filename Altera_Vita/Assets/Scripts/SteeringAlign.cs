@@ -27,12 +27,16 @@ public class SteeringAlign : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 desired = (controller.target.transform.position - transform.position).normalized;
-
-        if (controller.target != null && Vector3.Angle(transform.forward, desired) > 2.0f)
+        if (controller.target != null)
         {
-            StartCoroutine("Rotator", desired);
-            corroutine_active = true;
+            Vector3 desired = (controller.target.transform.position - transform.position).normalized;
+
+            if (controller.target != null && Vector3.Angle(transform.forward, desired) > 2.0f)
+            {
+                StartCoroutine("Rotator", desired);
+                corroutine_active = true;
+            }
         }
+  
     }
 }
