@@ -411,16 +411,6 @@ public class PlayerController : MonoBehaviour
 
     private void LateUpdate()
     {
-        //Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        //mousePos.y = 0;
-        //Debug.Log(mousePos);
-
-        //chest.LookAt(target);
-        //chest.rotation *= Quaternion.Euler(chestOffset);
-
-        // hips.LookAt(CalculateForwardTransform());        
-        // hips.rotation *= Quaternion.Euler(hipsOffset);
-
         Ray mouseRay = Camera.main.ScreenPointToRay(Input.mousePosition);
         float midPoint = (transform.position - Camera.main.transform.position).magnitude;
 
