@@ -20,6 +20,10 @@ public class Transition : MonoBehaviour
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
     }
 
+    public void NormalTransitionStart()
+    {
+        StartCoroutine(NormalTransition());
+    }
 
     IEnumerator LoadLevel(int levelIndex)
     {
@@ -38,6 +42,18 @@ public class Transition : MonoBehaviour
         yield return new WaitForSeconds(transitiontime);
         GameObject go = GameObject.FindGameObjectWithTag("ima");
         Image im = go.GetComponent<Image>();
+        im.enabled = false;
+    }
+
+    IEnumerator NormalTransition()
+    {
+        GameObject go = GameObject.FindGameObjectWithTag("ima");
+        Image im = go.GetComponent<Image>();
+        im.enabled = true;
+        transition.SetBool("m", true);
+        yield return new WaitForSeconds(transitiontime);
+        transition.SetBool("m", false);
+        yield return new WaitForSeconds(transitiontime);
         im.enabled = false;
     }
 }
