@@ -18,6 +18,8 @@ public class PlayerController : MonoBehaviour
     public Vector3 startingPosition = Vector3.zero;
     public Quaternion startingRotation = Quaternion.identity;
     public Transform target;
+    public int max_clip_ammo;
+    private int clip_ammo;
 
     private Animator animator;
     private Transform chest;
@@ -31,11 +33,12 @@ public class PlayerController : MonoBehaviour
         chest = animator.GetBoneTransform(HumanBodyBones.Chest);
         hips = animator.GetBoneTransform(HumanBodyBones.Hips);
         health = maxHealth;
+        clip_ammo = max_clip_ammo;
     }
 
     void Update()
     {
-        if (IsDead() || Input.GetKey(KeyCode.R))
+        if (IsDead() || Input.GetKey(KeyCode.F))
         {
             animator.SetBool("IsDead", true);
             lastDeathTime = Time.time;
@@ -83,9 +86,20 @@ public class PlayerController : MonoBehaviour
             }
 
             // Player shoot
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) && clip_ammo > 0)
             {
+                clip_ammo--;
                 gun.GetComponent<SpawnBullet>().Shoot();
+            }
+            else
+            {
+                //Maybe play empty gun cocking here since we have no bullets left
+            }
+
+            // reload!
+            if (Input.GetKeyDown(KeyCode.R)) 
+            {
+                clip_ammo = max_clip_ammo;
             }
         }
     }

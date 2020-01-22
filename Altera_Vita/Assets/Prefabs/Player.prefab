@@ -1122,11 +1122,16 @@ MonoBehaviour:
   maxHealth: 100
   hipsOffset: {x: 0, y: 0, z: 0}
   chestOffset: {x: 0, y: 0, z: 0}
-  waitTime: 2
+  gun: {fileID: 0}
+  lastDeathTime: 0
+  respawnWait: 3
+  resetLevelWait: 6
   health: 0
   speed: 0.025
   startingPosition: {x: 0, y: 0, z: -2}
+  startingRotation: {x: 0, y: 0, z: 0, w: 1}
   target: {fileID: 0}
+  max_clip_ammo: 7
 --- !u!1 &5591208249425366130
 GameObject:
   m_ObjectHideFlags: 0
@@ -1442,11 +1447,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5591208249425399886}
     m_Modifications:
-    - target: {fileID: 1250357986450831337, guid: a8c71f9a966251c48a704ad310abedcb,
-        type: 3}
-      propertyPath: m_Name
-      value: Pistol
-      objectReference: {fileID: 0}
     - target: {fileID: 1248425770039164871, guid: a8c71f9a966251c48a704ad310abedcb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1511,6 +1511,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.31933576
+      objectReference: {fileID: 0}
+    - target: {fileID: 1250357986450831337, guid: a8c71f9a966251c48a704ad310abedcb,
+        type: 3}
+      propertyPath: m_Name
+      value: Pistol
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8c71f9a966251c48a704ad310abedcb, type: 3}
