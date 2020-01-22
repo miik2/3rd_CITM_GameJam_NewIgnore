@@ -11,6 +11,10 @@ TagManager:
   - EX
   - PlayerBullet
   - EnemyBullet
+  - Altera
+  - ViTA
+  - Line1
+  - Line2
   layers:
   - Default
   - TransparentFX
