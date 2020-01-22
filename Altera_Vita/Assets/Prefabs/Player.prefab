@@ -1065,6 +1065,7 @@ GameObject:
   - component: {fileID: 5591208249425399890}
   - component: {fileID: 5591208249432670132}
   - component: {fileID: 5591208250335187038}
+  - component: {fileID: 6342613192016703587}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1132,6 +1133,20 @@ MonoBehaviour:
   startingRotation: {x: 0, y: 0, z: 0, w: 1}
   target: {fileID: 0}
   max_clip_ammo: 7
+--- !u!136 &6342613192016703587
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5591208249425366128}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.20661849
+  m_Height: 1.8241975
+  m_Direction: 1
+  m_Center: {x: 0.0050929785, y: 0.8873075, z: -0.03721875}
 --- !u!1 &5591208249425366130
 GameObject:
   m_ObjectHideFlags: 0
@@ -1447,6 +1462,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5591208249425399886}
     m_Modifications:
+    - target: {fileID: 1250357986450831337, guid: a8c71f9a966251c48a704ad310abedcb,
+        type: 3}
+      propertyPath: m_Name
+      value: Pistol
+      objectReference: {fileID: 0}
     - target: {fileID: 1248425770039164871, guid: a8c71f9a966251c48a704ad310abedcb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1511,11 +1531,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.31933576
-      objectReference: {fileID: 0}
-    - target: {fileID: 1250357986450831337, guid: a8c71f9a966251c48a704ad310abedcb,
-        type: 3}
-      propertyPath: m_Name
-      value: Pistol
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8c71f9a966251c48a704ad310abedcb, type: 3}

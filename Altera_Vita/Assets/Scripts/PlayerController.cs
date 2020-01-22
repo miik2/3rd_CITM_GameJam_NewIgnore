@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Vector3 hipsOffset;
     [SerializeField] private Vector3 chestOffset;
     [SerializeField] private GameObject gun;
-    private bool mustRespawn = false;
+    public bool mustRespawn = false;
     public float lastDeathTime = 0.0f;
     public float respawnWait = 3.0f;
     public float resetLevelWait = 6.0f;
@@ -18,7 +18,8 @@ public class PlayerController : MonoBehaviour
     public Vector3 startingPosition = Vector3.zero;
     public Quaternion startingRotation = Quaternion.identity;
     public Transform target;
-    public int max_clip_ammo;
+    public int max_clip_ammo = 7;
+    public int damage = 10;
     private int clip_ammo;
 
     private Animator animator;
@@ -124,14 +125,23 @@ public class PlayerController : MonoBehaviour
 
     private void ResetCharacter()
     {
+        // Stats reset
         health = maxHealth;
+        clip_ammo = max_clip_ammo;
+
+        // Position reset
         transform.position = startingPosition;
         transform.rotation = startingRotation;
+
+        // Animation reset
         animator.SetBool("IsDead", false);
         animator.SetFloat("Input_X", 0.0f);
         animator.SetFloat("Input_Z", 0.0f);
-        // Clone code
+
+        // Audio effect reset
         low_pass_filter.cutoffFrequency = 22000;
+
+        // Clone code
     }
 
 }
