@@ -9,6 +9,8 @@ TagManager:
   - HTP
   - BK
   - EX
+  - PlayerBullet
+  - EnemyBullet
   layers:
   - Default
   - TransparentFX
