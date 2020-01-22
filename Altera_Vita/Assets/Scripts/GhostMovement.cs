@@ -22,6 +22,8 @@ public class GhostMovement : MonoBehaviour
     bool moveLeft = false;
     bool shoot = false;
 
+    float health = 100f;
+
     float timeLeftW, timeLeftA, timeLeftS, timeLeftD, timeLeftShoot = 0f;
 
     float totalTime;
@@ -97,14 +99,18 @@ public class GhostMovement : MonoBehaviour
     void Update()
     {
         nResets = playerMovement.nResets;
-        if (nResets <= limitResets && Input.GetKeyDown(KeyCode.Space))
+        if (nResets <= limitResets && playerMovement.IsDead())
         {
             transform.position = initialPos;
             indexW = indexA = indexS = indexD = indexShoot = 0;
             timeLeftW = timeLeftA = timeLeftS = timeLeftD = timeLeftShoot = 0f;
         }
 
-        MoveGhostPlayer();
+        if (IsDead())
+            animator.SetBool("IsDead", true);
+        
+        else
+            MoveGhostPlayer();
 
         if (moveRight)
             MoveRight();
@@ -232,6 +238,20 @@ public class GhostMovement : MonoBehaviour
                 timeLeftShoot = 0;
             }
         }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "EnemyBullet")
+        {
+            Destroy(other.gameObject);
+            health -= 100;
+        }
+    }
+
+    public bool IsDead()
+    {
+        return health <= 0;
     }
 
     void MoveForward()
