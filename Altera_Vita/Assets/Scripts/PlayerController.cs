@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public enum KEY_PRESSED { W, A, S, D };
 
@@ -418,10 +419,12 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator Reloadinger()
     {
+        GameObject.FindGameObjectWithTag("reload").GetComponent<Text>().enabled = true;
         reloader.ReloadAnim();
         yield return new WaitForSeconds(1.5f);
         clip_ammo = max_clip_ammo;
         reloader.EndReloadAnim();
+        GameObject.FindGameObjectWithTag("reload").GetComponent<Text>().enabled = false;
     }
 
     private void LateUpdate()
