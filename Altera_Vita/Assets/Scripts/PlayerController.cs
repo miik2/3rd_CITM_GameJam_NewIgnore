@@ -364,7 +364,7 @@ public class PlayerController : MonoBehaviour
 
                 playerShots.shoot = true;
                 playerShots.timePressed = timerShoot;
-                playerShots.totalTime = Time.time;
+                playerShots.totalTime = Time.time - resetTime[nResets];
 
                 Ray mouseRay = Camera.main.ScreenPointToRay(Input.mousePosition);
                 float midPoint = (transform.position - Camera.main.transform.position).magnitude;
@@ -384,15 +384,15 @@ public class PlayerController : MonoBehaviour
 
                     playerShots.shoot = false;
                     playerShots.timePressed = idleTimerShoot;
-                    playerShots.totalTime = Time.time;
+                    playerShots.totalTime = Time.time - resetTime[nResets];
                     playerShots.direction = Vector3.zero;
                     actionsListShoot.Add(playerShots);
                 }
                 else
                 {
                     playerShots.shoot = false;
-                    playerShots.timePressed = Time.time;
-                    playerShots.totalTime = Time.time;
+                    playerShots.timePressed = Time.time - resetTime[nResets];
+                    playerShots.totalTime = Time.time - resetTime[nResets];
                     playerShots.direction = Vector3.zero;
                     actionsListShoot.Add(playerShots);
                 }
