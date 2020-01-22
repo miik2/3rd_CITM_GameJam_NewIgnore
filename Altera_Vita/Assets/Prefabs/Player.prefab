@@ -1131,7 +1131,7 @@ MonoBehaviour:
   respawnWait: 3
   resetLevelWait: 6
   health: 0
-  speed: 0.04
+  speed: 2
   startingPosition: {x: 0, y: 0, z: 0}
   startingRotation: {x: 0, y: 0, z: 0, w: 1}
   target: {fileID: 0}

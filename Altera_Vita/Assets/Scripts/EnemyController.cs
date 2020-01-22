@@ -84,13 +84,17 @@ public class EnemyController : MonoBehaviour
         if (target != null)
             return target.GetComponent<PlayerController>().IsDead();
         else
+        {
+            animator.SetBool("Shooting", false);
             return true;
+        }
     }
 
     public void FireAtTarget()
     {
         //Shot
         rifle.GetComponent<SpawnBullet>().Shoot(player.transform.position);
+        animator.SetBool("Shooting", true);
 
         if (IsTargetDead())
             if (!ScanForPlayers())
@@ -191,13 +195,11 @@ public class EnemyController : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Boundary")
+        if (other.tag == "PlayerBullet")
         {
-            return;
+            Destroy(other.gameObject);
+            health -= player.damage;
         }
-
-        Destroy(other.gameObject);
-        health -= player.damage;
     }
 
     public void ResetEnemy()
