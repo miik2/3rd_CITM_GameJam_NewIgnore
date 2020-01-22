@@ -606,7 +606,7 @@ GameObject:
   - component: {fileID: 1942529032}
   - component: {fileID: 1942529031}
   - component: {fileID: 1942529030}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Boundary
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -681,8 +681,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1942529029}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.60674, y: 1.31, z: 2.213584}
-  m_LocalScale: {x: 23.792917, y: 1.2028549, z: 21.822056}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 24.27, y: 1.2028549, z: 31.72}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
@@ -1001,6 +1001,11 @@ PrefabInstance:
       propertyPath: gun
       value: 
       objectReference: {fileID: 1147883918}
+    - target: {fileID: 5591208250335187038, guid: a206ec8e77624f547a45599e56f14087,
+        type: 3}
+      propertyPath: speed
+      value: 0.03
+      objectReference: {fileID: 0}
     - target: {fileID: 2312089709958446749, guid: a206ec8e77624f547a45599e56f14087,
         type: 3}
       propertyPath: m_LocalRotation.x
