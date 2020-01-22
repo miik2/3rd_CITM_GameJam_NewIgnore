@@ -19,7 +19,7 @@ public class SteeringAlign : MonoBehaviour
         }
     }
 
-    private void Start()
+    void Start()
     {
         controller = GetComponent<EnemyController>();
     }
@@ -32,7 +32,6 @@ public class SteeringAlign : MonoBehaviour
         if (controller.target != null && Vector3.Angle(transform.forward, desired) > 2.0f)
         {
             StartCoroutine("Rotator", desired);
-            corroutine_active = true;
         }
     }
 }
