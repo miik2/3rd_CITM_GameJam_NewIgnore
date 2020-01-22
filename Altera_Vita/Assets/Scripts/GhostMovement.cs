@@ -69,6 +69,7 @@ public class GhostMovement : MonoBehaviour
         {
             actionsListShoot.Add(playerMovement.prevActionsListShoot[i]);
         }
+        animator = GetComponent<Animator>();
 
         speed = playerMovement.speed;
         ghostTimer = playerMovement.ghostTimer;
@@ -76,7 +77,6 @@ public class GhostMovement : MonoBehaviour
         initialPos = playerMovement.startingPosition;
         limitResets = playerMovement.limitResets;
         nResets = playerMovement.nResets;
-        animator = playerMovement.animator;
         Input_X = playerMovement.Input_X;
         Input_Z = playerMovement.Input_Z;
         gun = playerMovement.gun;
@@ -114,6 +114,12 @@ public class GhostMovement : MonoBehaviour
             MoveForward();
         if (moveBackwards)
             MoveBackwards();
+
+        if (!moveLeft && !moveRight && !moveForward && !moveBackwards)
+        {
+            animator.SetFloat("Input_Z", 0f);
+            animator.SetFloat("Input_X", 0f);
+        }
     }
 
     void MoveGhostPlayer()
@@ -231,29 +237,33 @@ public class GhostMovement : MonoBehaviour
     void MoveForward()
     {
         transform.position += new Vector3(0, 0, speed * Time.deltaTime);
-        //Input_Z = Input.GetAxis("Vertical");
-        //animator.SetFloat("Input_Z", Input_Z);
+        Vector3 aux = new Vector3(0, 0, 1);
+        transform.LookAt(transform.position + aux, Vector3.up);
+        animator.SetFloat("Input_Z", 0.8f);
     }
 
     void MoveBackwards()
     {
         transform.position += new Vector3(0, 0, -speed * Time.deltaTime);
-        //Input_Z = Input.GetAxis("Vertical");
-        //animator.SetFloat("Input_Z", Input_Z);
+        Vector3 aux = new Vector3(0, 0, -1);
+        transform.LookAt(transform.position + aux, Vector3.up);
+        animator.SetFloat("Input_Z", -0.8f);
     }
 
     void MoveRight()
     {
         transform.position += new Vector3(speed * Time.deltaTime, 0, 0);
-        //Input_X = Input.GetAxis("Horizontal");
-        //animator.SetFloat("Input_X", Input_X);
+        Vector3 aux = new Vector3(1, 0, 0);
+        transform.LookAt(transform.position + aux, Vector3.up);
+        animator.SetFloat("Input_X", 0.8f);
     }
 
     void MoveLeft()
     {
         transform.position += new Vector3(-speed * Time.deltaTime, 0, 0);
-        //Input_X = Input.GetAxis("Horizontal");
-        //animator.SetFloat("Input_X", Input_X);
+        Vector3 aux = new Vector3(-1, 0, 0);
+        transform.LookAt(transform.position + aux, Vector3.up);
+        animator.SetFloat("Input_X", -0.8f);
     }
 
 }

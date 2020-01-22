@@ -1138,6 +1138,7 @@ MonoBehaviour:
   max_clip_ammo: 7
   damage: 10
   reloader: {fileID: 0}
+  ghostAnimator: {fileID: 5591208249432670132}
   animator: {fileID: 0}
   Input_X: 0
   Input_Z: 0
@@ -1586,11 +1587,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5591208249425399886}
     m_Modifications:
-    - target: {fileID: 1250357986450831337, guid: a8c71f9a966251c48a704ad310abedcb,
-        type: 3}
-      propertyPath: m_Name
-      value: Pistol
-      objectReference: {fileID: 0}
     - target: {fileID: 1248425770039164871, guid: a8c71f9a966251c48a704ad310abedcb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1655,6 +1651,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.31933576
+      objectReference: {fileID: 0}
+    - target: {fileID: 1250357986450831337, guid: a8c71f9a966251c48a704ad310abedcb,
+        type: 3}
+      propertyPath: m_Name
+      value: Pistol
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8c71f9a966251c48a704ad310abedcb, type: 3}
