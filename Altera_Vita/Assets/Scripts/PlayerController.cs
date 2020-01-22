@@ -100,9 +100,9 @@ public class PlayerController : MonoBehaviour
 
         resetTime.Add(0f);
         clip_ammo = max_clip_ammo;
-        low_pass_filter = GameObject.Find("Audio_Test").GetComponent<AudioLowPassFilter>();
-        low_pass_filter.cutoffFrequency = 22000;
-        source = GetComponent<AudioSource>();
+       // low_pass_filter = GameObject.Find("Audio_Test").GetComponent<AudioLowPassFilter>();
+        //low_pass_filter.cutoffFrequency = 22000;
+        source = gameObject.GetComponent<AudioSource>();
     }
 
     void Update()
@@ -412,8 +412,8 @@ public class PlayerController : MonoBehaviour
             // reload!
             if (Input.GetKeyDown(KeyCode.R))
             {
-                //source.clip = reload_sound;
-                //source.Play();
+                source.clip = reload_sound;
+                source.Play();
                 StartCoroutine(Reloadinger());
             }
         }
