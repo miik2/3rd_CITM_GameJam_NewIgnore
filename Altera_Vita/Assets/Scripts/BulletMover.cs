@@ -1,8 +1,16 @@
 ﻿using UnityEngine;
 
+public enum BulletType
+{
+    PLAYER = 0,
+    ENEMY,
+};
+
 public class BulletMover : MonoBehaviour
 {
+  
     public float speed;
+    public BulletType owner;
 
     Vector3 direction;
 
@@ -42,7 +50,14 @@ public class BulletMover : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        if (!collision.transform.parent.CompareTag("Player"))
+        if (owner == BulletType.PLAYER)
+        if(!collision.transform.parent.CompareTag("Player"))
+        {
+            Destroy(this);
+        }
+
+        if(owner == BulletType.ENEMY)
+        if (!collision.transform.parent.CompareTag("Enemy"))
         {
             Destroy(this);
         }
