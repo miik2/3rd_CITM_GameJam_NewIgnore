@@ -29,8 +29,8 @@ public class PlayerController : MonoBehaviour
 
     public bool mustRespawn = false;
     public float lastDeathTime = 0.0f;
-    public float respawnWait = 3.0f;
-    public float resetLevelWait = 6.0f;
+    public float respawnWait = 2.0f;
+    public float resetLevelWait = 4.0f;
 
     public int health;
     public float speed = 0.025f;
@@ -102,7 +102,8 @@ public class PlayerController : MonoBehaviour
     }
 
     void Update()
-    {
+    {    
+
         if (IsDead() || Input.GetKey(KeyCode.F))
         {
             animator.SetBool("IsDead", true);
@@ -404,7 +405,11 @@ public class PlayerController : MonoBehaviour
     }
 
     private void LateUpdate()
-    {        
+    {
+        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mousePos.y = 0;
+        Debug.Log(mousePos);
+
         chest.LookAt(target);
         chest.rotation *= Quaternion.Euler(chestOffset);
 
