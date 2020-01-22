@@ -10,6 +10,8 @@ public class BulletMover : MonoBehaviour
 
     bool calculatedDirection = false;
 
+    private SphereCollider col;
+
     private void Awake()
     {
         Ray mouseRay = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -19,6 +21,7 @@ public class BulletMover : MonoBehaviour
         destination.y = transform.position.y;
 
         direction = (destination - transform.position).normalized;
+        col = GetComponent<SphereCollider>();
     }
 
     void Update()
@@ -35,5 +38,13 @@ public class BulletMover : MonoBehaviour
         if (calculatedDirection)
             transform.position += direction;
 
+    }
+
+    private void OnTriggerEnter(Collider collision)
+    {
+        if (!collision.transform.parent.CompareTag("Player"))
+        {
+            Destroy(this);
+        }
     }
 }
