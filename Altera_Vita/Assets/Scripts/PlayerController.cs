@@ -89,7 +89,7 @@ public class PlayerController : MonoBehaviour
     public AudioClip reload_sound;
     public AudioClip empty_clip_sound;
     private AudioSource source;
-    private AudioLowPassFilter low_pass_filter;
+    public AudioLowPassFilter low_pass_filter;
 
     void Start()
     {
@@ -100,8 +100,7 @@ public class PlayerController : MonoBehaviour
 
         resetTime.Add(0f);
         clip_ammo = max_clip_ammo;
-       // low_pass_filter = GameObject.Find("Audio_Test").GetComponent<AudioLowPassFilter>();
-        //low_pass_filter.cutoffFrequency = 22000;
+        low_pass_filter.cutoffFrequency = 22000;
         source = gameObject.GetComponent<AudioSource>();
     }
 
