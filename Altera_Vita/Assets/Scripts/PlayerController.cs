@@ -86,6 +86,9 @@ public class PlayerController : MonoBehaviour
     public int nResets = 0;
     public int limitResets = 5;
 
+    public AudioClip reload_sound;
+    public AudioClip empty_clip_sound;
+    private AudioSource source;
     private AudioLowPassFilter low_pass_filter;
 
     void Start()
@@ -97,17 +100,13 @@ public class PlayerController : MonoBehaviour
 
         resetTime.Add(0f);
         clip_ammo = max_clip_ammo;
-        //low_pass_filter = GameObject.Find("Audio_Test").GetComponent<AudioLowPassFilter>();
-        //low_pass_filter.cutoffFrequency = 22000;
-
-        clip_ammo = max_clip_ammo;
-        //low_pass_filter = GameObject.Find("Audio_Test").GetComponent<AudioLowPassFilter>();
-        //low_pass_filter.cutoffFrequency = 22000;
+        low_pass_filter = GameObject.Find("Audio_Test").GetComponent<AudioLowPassFilter>();
+        low_pass_filter.cutoffFrequency = 22000;
+        source = GetComponent<AudioSource>();
     }
 
     void Update()
     {    
-
         if (IsDead() || Input.GetKey(KeyCode.F))
         {
             animator.SetBool("IsDead", true);
@@ -404,14 +403,17 @@ public class PlayerController : MonoBehaviour
 
                 gun.GetComponent<SpawnBullet>().Shoot(Vector3.zero);
             }
-            else
+            else if (Input.GetMouseButtonDown(0))
             {
-                //Maybe play empty gun cocking here since we have no bullets left
+                source.clip = empty_clip_sound;
+                source.Play();
             }
 
             // reload!
-            if (Input.GetKeyDown(KeyCode.R)) 
+            if (Input.GetKeyDown(KeyCode.R))
             {
+                //source.clip = reload_sound;
+                //source.Play();
                 StartCoroutine(Reloadinger());
             }
         }
