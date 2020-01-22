@@ -9,6 +9,11 @@ public class Reload : MonoBehaviour
 
     public void ReloadAnim()
     {
-        reload.SetTrigger("reload");
+        reload.SetBool("reload", true);
+    }
+
+    public void EndReloadAnim()
+    {
+        reload.SetBool("reload", false);
     }
 }
