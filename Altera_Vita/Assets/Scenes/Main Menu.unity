@@ -1885,17 +1885,17 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2794601751173110501, guid: ea67ac2b0e738b244b187f2053855723,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1685809258066218883, guid: ea67ac2b0e738b244b187f2053855723,
         type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 0a392a362632fa94dbd6c2fff8e35cf1,
         type: 3}
-    - target: {fileID: 2794601751173110501, guid: ea67ac2b0e738b244b187f2053855723,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea67ac2b0e738b244b187f2053855723, type: 3}
 --- !u!1 &1515386370
@@ -2148,7 +2148,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

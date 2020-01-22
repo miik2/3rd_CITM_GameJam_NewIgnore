@@ -230,28 +230,28 @@ public class GhostMovement : MonoBehaviour
 
     void MoveForward()
     {
-        transform.position += new Vector3(0, 0, speed);
+        transform.position += new Vector3(0, 0, speed * Time.deltaTime);
         //Input_Z = Input.GetAxis("Vertical");
         //animator.SetFloat("Input_Z", Input_Z);
     }
 
     void MoveBackwards()
     {
-        transform.position += new Vector3(0, 0, -speed);
+        transform.position += new Vector3(0, 0, -speed * Time.deltaTime);
         //Input_Z = Input.GetAxis("Vertical");
         //animator.SetFloat("Input_Z", Input_Z);
     }
 
     void MoveRight()
     {
-        transform.position += new Vector3(speed, 0, 0);
+        transform.position += new Vector3(speed * Time.deltaTime, 0, 0);
         //Input_X = Input.GetAxis("Horizontal");
         //animator.SetFloat("Input_X", Input_X);
     }
 
     void MoveLeft()
     {
-        transform.position += new Vector3(-speed, 0, 0);
+        transform.position += new Vector3(-speed * Time.deltaTime, 0, 0);
         //Input_X = Input.GetAxis("Horizontal");
         //animator.SetFloat("Input_X", Input_X);
     }

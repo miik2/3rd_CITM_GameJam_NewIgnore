@@ -91,7 +91,7 @@ public class PlayerController : MonoBehaviour
     public AudioClip reload_sound;
     public AudioClip empty_clip_sound;
     private AudioSource source;
-    private AudioLowPassFilter low_pass_filter;
+    public AudioLowPassFilter low_pass_filter;
 
     void Start()
     {
@@ -103,8 +103,7 @@ public class PlayerController : MonoBehaviour
 
         resetTime.Add(0f);
         clip_ammo = max_clip_ammo;
-       // low_pass_filter = GameObject.Find("Audio_Test").GetComponent<AudioLowPassFilter>();
-        //low_pass_filter.cutoffFrequency = 22000;
+        low_pass_filter.cutoffFrequency = 22000;
         source = gameObject.GetComponent<AudioSource>();
     }
 
@@ -301,28 +300,28 @@ public class PlayerController : MonoBehaviour
 
             if (Input.GetKey(KeyCode.W))
             {
-                transform.position += new Vector3(0, 0, speed);
+                transform.position += new Vector3(0, 0, speed * Time.deltaTime);
                 Input_Z = Input.GetAxis("Vertical");
                 animator.SetFloat("Input_Z", Input_Z);
                 timerW = Time.time - lastTimerW;
             }
             if (Input.GetKey(KeyCode.S))
             {
-                transform.position += new Vector3(0, 0, -speed);
+                transform.position += new Vector3(0, 0, -speed * Time.deltaTime);
                 Input_Z = Input.GetAxis("Vertical");
                 animator.SetFloat("Input_Z", Input_Z);
                 timerS = Time.time - lastTimerS;
             }
             if (Input.GetKey(KeyCode.A))
             {
-                transform.position += new Vector3(-speed, 0, 0);
+                transform.position += new Vector3(-speed * Time.deltaTime, 0, 0);
                 Input_X = Input.GetAxis("Horizontal");
                 animator.SetFloat("Input_X", Input_X);
                 timerA = Time.time - lastTimerA;
             }
             if (Input.GetKey(KeyCode.D))
             {
-                transform.position += new Vector3(speed, 0, 0);
+                transform.position += new Vector3(speed * Time.deltaTime, 0, 0);
                 Input_X = Input.GetAxis("Horizontal");
                 animator.SetFloat("Input_X", Input_X);
                 timerD = Time.time - lastTimerD;
@@ -467,7 +466,7 @@ public class PlayerController : MonoBehaviour
         clip_ammo = max_clip_ammo;
 
         // Position reset
-        transform.position = startingPosition;
+        transform.position =    startingPosition;
         transform.rotation = startingRotation;
 
         // Animation reset
