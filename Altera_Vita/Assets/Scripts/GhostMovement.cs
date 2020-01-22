@@ -214,13 +214,8 @@ public class GhostMovement : MonoBehaviour
                 if (actionsListShoot[indexShoot].shoot && !shoot)
                 {
                     SpawnBullet bullet = gun.GetComponent<SpawnBullet>();
-                    if (!shoot)
-                    {
-                        shoot = true;
-                        bullet.Shoot();
-                    }
-                    Debug.Log("shoot");
-                    Debug.Log(shoot);
+                    bullet.Shoot(actionsListShoot[indexShoot].direction);
+                    shoot = true;
                 }
             }
             else
@@ -261,9 +256,4 @@ public class GhostMovement : MonoBehaviour
         //animator.SetFloat("Input_X", Input_X);
     }
 
-    void Shoot()
-    {
-        gun.GetComponent<SpawnBullet>().Shoot();
-        Debug.Log("shoot");
-    }
 }
