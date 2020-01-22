@@ -41,6 +41,8 @@ public class PlayerController : MonoBehaviour
     public int damage = 10;
     private int clip_ammo;
 
+    public Reload reloader;
+
     [HideInInspector]
     public Animator animator;
     private Transform chest;
@@ -399,9 +401,16 @@ public class PlayerController : MonoBehaviour
             // reload!
             if (Input.GetKeyDown(KeyCode.R)) 
             {
-                clip_ammo = max_clip_ammo;
+                StartCoroutine(Reloadinger());
             }
         }
+    }
+
+    IEnumerator Reloadinger()
+    {
+        reloader.ReloadAnim();
+        yield return new WaitForSeconds(1.5f);
+        clip_ammo = max_clip_ammo;
     }
 
     private void LateUpdate()
