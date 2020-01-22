@@ -15,6 +15,7 @@ public class EnemyController : MonoBehaviour
     public int health;
     public Vector3 startingPosition = Vector3.zero;
     public Quaternion startingRotation = Quaternion.identity;
+    public GameObject rifle;
 
     public GameObject target = null;
     public Vector3 last_location = Vector3.zero;
@@ -35,7 +36,9 @@ public class EnemyController : MonoBehaviour
         GameObject gameController = GameObject.Find("GameController");
         gameController.GetComponent<ManageScene>().enemies.Add(this);
         shotCollector = gameController.GetComponent<Shot_Collector>();
-    }
+        startingPosition = transform.position;
+        startingRotation = transform.rotation;
+}
 
     public bool ScanForPlayers()
     {
@@ -75,6 +78,7 @@ public class EnemyController : MonoBehaviour
     public void FireAtTarget()
     {
         //Shot
+        rifle.GetComponent<SpawnBullet>().Shoot(player.transform.position);
 
         if (IsTargetDead())
             if (!ScanForPlayers())
