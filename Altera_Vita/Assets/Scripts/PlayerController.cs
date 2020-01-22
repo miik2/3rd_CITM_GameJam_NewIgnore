@@ -32,7 +32,6 @@ public class PlayerController : MonoBehaviour
     public bool mustRespawn = false;
     public float lastDeathTime = 0.0f;
     public float respawnWait = 2.0f;
-    public float resetLevelWait = 4.0f;
 
     public int health;
     public float speed = 0.025f;

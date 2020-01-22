@@ -82,7 +82,10 @@ public class EnemyController : MonoBehaviour
         if (target != null)
             return target.GetComponent<PlayerController>().IsDead();
         else
+        {
+            animator.SetBool("Shooting", false);
             return true;
+        }
     }
 
     public void FireAtTarget()
@@ -90,6 +93,7 @@ public class EnemyController : MonoBehaviour
         //Shot
         //transform.Rotate(Vector3.up, );
         rifle.GetComponent<SpawnBullet>().Shoot(player.transform.position);
+        animator.SetBool("Shooting", true);
 
         if (IsTargetDead())
             if (!ScanForPlayers())
