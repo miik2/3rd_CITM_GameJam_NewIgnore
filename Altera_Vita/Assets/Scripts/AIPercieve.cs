@@ -9,11 +9,11 @@ public class AIPercieve : MonoBehaviour
 
     [Header("Contact")]
     public bool contact = true;
-    public float radius = 5.0f;
+    public float contact_radius = 5.0f;
 
     [Header("Hearing")]
     public bool hearing = true;
-    public float distance = 15.0f;
+    public float hear_distance = 15.0f;
 
     [Header("Sight")]
     public bool sight = true;
@@ -27,19 +27,22 @@ public class AIPercieve : MonoBehaviour
     public List<GameObject> detected = new List<GameObject>();
     private Collider myCollider;
 
+    public Shot_Collector shotCollector;
+
     // Start is called before the first frame update
     void Start()
     {
         manager = GetComponent<AIPerceptionManager>();
         myCollider = GetComponent<Collider>();
+        //shotCollector = GameObject.Find("Ambient Light").GetComponent<Shot_Collector>();
 
         if (vision == null)
             GetComponent<Camera>();
 
         visionDistance = vision.farClipPlane / Mathf.Cos(vision.fieldOfView / 2.0f);  // Make cone radius out of FOV angle and farClipPlane distance from camera
 
-        colliderSearchRadius = Mathf.Max(visionDistance, distance);
-        colliderSearchRadius = Mathf.Max(colliderSearchRadius, radius); // Use the largest area of perception for collecting in a sphere
+        //colliderSearchRadius = Mathf.Max(visionDistance, distance);   // Because sound (we don't use colliders for sound)
+        colliderSearchRadius = Mathf.Max(visionDistance, contact_radius); // Use the largest area of perception for collecting in a sphere
     }
 
     // Update is called once per frame
@@ -65,23 +68,17 @@ public class AIPercieve : MonoBehaviour
                     foundData.sense = PerceptionEvent.senses.VISION;
                     inRange = true;
                 }
-                else if (hearing && targetDistance < distance)    // In hearing range
-                {
-                    foundData.sense = PerceptionEvent.senses.SOUND;
-                    inRange = true;
-                }
-                else if (contact && targetDistance < radius)  // In contact distance
+                else if (contact && targetDistance < contact_radius)  // In contact distance
                 {
                     foundData.sense = PerceptionEvent.senses.CONTACT;
                     inRange = true;
                 }
 
-                if (inRange)
-                    if (foundData.sense == PerceptionEvent.senses.SOUND || !Physics.Raycast(transform.position, targetVector, targetDistance, obstacles))  // If in hearing distance or no obstacles in the way
-                    {
-                        foundData.target = col.gameObject;
-                        currently_percieving.Add(foundData);   // We list all that we percieve
-                    }
+                if (inRange && !Physics.Raycast(transform.position, targetVector, targetDistance, obstacles))  // If in hearing distance or no obstacles in the way
+                {
+                    foundData.target = col.gameObject;
+                    currently_percieving.Add(foundData);   // We list all that we percieve
+                }
             }
         }
         
@@ -136,12 +133,12 @@ public class AIPercieve : MonoBehaviour
         if (contact)
         {
             Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere(transform.position, radius);
+            Gizmos.DrawWireSphere(transform.position, contact_radius);
         }
         if (hearing)
         {
             Gizmos.color = new Color(255.0f, 140.0f, 0.0f);
-            Gizmos.DrawWireSphere(transform.position, distance);
+            Gizmos.DrawWireSphere(transform.position, hear_distance);
         }
     }
 

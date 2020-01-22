@@ -14,9 +14,18 @@ public class PerceptionEvent
 
 public class AIPerceptionManager : MonoBehaviour {
 
+    public AIPercieve perception;
+    public EnemyController controller;
+
     //public GameObject Alert;
     //public List<PerceptionEvent> target_events = new List<PerceptionEvent>();
     //public List<PerceptionEvent> spotter_events = new List<PerceptionEvent>();
+
+    void Start()
+    {
+        perception = GetComponent<AIPercieve>();
+        controller = gameObject.GetComponent<EnemyController>();
+    }
 
     // Update is called once per frame
     public void PerceptionEvent (PerceptionEvent ev) {
@@ -30,12 +39,26 @@ public class AIPerceptionManager : MonoBehaviour {
             {
                 Debug.Log("FOUND: " + ev.target.name);
                 target_perception.spotted_by.Add(this.gameObject);
+
+                if (controller.target == null
+                    && LayerMask.LayerToName(ev.target.gameObject.layer) == "Player"
+                    && ev.target.gameObject.GetComponent<PlayerController>().IsDead() == false) //If no player sighted and new player sighted, add target
+                    controller.target = ev.target;
+
                 //Alert.SetActive(true);
             }
             else
             {
                 Debug.Log("LOST: " + ev.target.name);
                 target_perception.spotted_by.Remove(this.gameObject);
+
+                if (ev.target == controller.target)
+                    if (!controller.ScanForPlayers())
+                    {
+                        controller.last_location = ev.target.gameObject.transform.position;
+                        controller.target = null;
+                    }
+
                 //Alert.SetActive(false);
             }
 
