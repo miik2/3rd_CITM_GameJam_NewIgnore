@@ -19,7 +19,7 @@ public class ManageScene : MonoBehaviour
         {
             foreach (EnemyController enemy in enemies)
             {
-                enemy.ResetEnemy();               
+                enemy.ResetEnemy();
             }
         }
     }

@@ -43,7 +43,10 @@ public class AIPerceptionManager : MonoBehaviour {
                 if (controller.target == null
                     && LayerMask.LayerToName(ev.target.gameObject.layer) == "Player"
                     && ev.target.gameObject.GetComponent<PlayerController>().IsDead() == false) //If no player sighted and new player sighted, add target
+                {
                     controller.target = ev.target;
+                    controller.last_location = Vector3.zero;
+                }
 
                 //Alert.SetActive(true);
             }

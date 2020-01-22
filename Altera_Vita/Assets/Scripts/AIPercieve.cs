@@ -39,7 +39,7 @@ public class AIPercieve : MonoBehaviour
         if (vision == null)
             GetComponent<Camera>();
 
-        visionDistance = vision.farClipPlane / Mathf.Cos(vision.fieldOfView / 2.0f);  // Make cone radius out of FOV angle and farClipPlane distance from camera
+        visionDistance = vision.farClipPlane / -Mathf.Cos(vision.fieldOfView / 2.0f);  // Make cone radius out of FOV angle and farClipPlane distance from camera
 
         //colliderSearchRadius = Mathf.Max(visionDistance, distance);   // Because sound (we don't use colliders for sound)
         colliderSearchRadius = Mathf.Max(visionDistance, contact_radius); // Use the largest area of perception for collecting in a sphere
