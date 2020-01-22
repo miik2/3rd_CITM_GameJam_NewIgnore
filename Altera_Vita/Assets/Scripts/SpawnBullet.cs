@@ -10,5 +10,6 @@ public class SpawnBullet : MonoBehaviour
     public void Shoot()
     {
         Instantiate(bullet, spawner.position, spawner.rotation);
+        Debug.Log("instantiate");
     }
 }
