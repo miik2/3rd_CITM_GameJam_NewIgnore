@@ -6,6 +6,10 @@ public class BulletMover : MonoBehaviour
 
     Vector3 direction;
 
+    public Vector3 target;
+
+    bool calculatedDirection = false;
+
     private void Awake()
     {
         Ray mouseRay = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -15,10 +19,21 @@ public class BulletMover : MonoBehaviour
         destination.y = transform.position.y;
 
         direction = (destination - transform.position).normalized;
-
     }
+
     void Update()
     {
-        transform.position += direction * speed * Time.deltaTime;
+        if (target == Vector3.zero)
+            transform.position += direction * speed * Time.deltaTime;
+
+        else if (!calculatedDirection)
+        {
+            direction = (target - transform.position).normalized * speed * Time.deltaTime;
+            calculatedDirection = true;
+        }
+
+        if (calculatedDirection)
+            transform.position += direction;
+
     }
 }

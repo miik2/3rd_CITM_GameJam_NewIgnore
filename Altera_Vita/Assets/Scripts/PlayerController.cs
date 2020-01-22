@@ -18,6 +18,7 @@ public struct PlayerShoot
     public float timePressed;
     public float totalTime;
     public bool shoot;
+    public Vector3 direction;
 }
 
 public class PlayerController : MonoBehaviour
@@ -95,12 +96,12 @@ public class PlayerController : MonoBehaviour
 
         resetTime.Add(0f);
         clip_ammo = max_clip_ammo;
-        low_pass_filter = GameObject.Find("Audio_Test").GetComponent<AudioLowPassFilter>();
-        low_pass_filter.cutoffFrequency = 22000;
+        //low_pass_filter = GameObject.Find("Audio_Test").GetComponent<AudioLowPassFilter>();
+        //low_pass_filter.cutoffFrequency = 22000;
 
         clip_ammo = max_clip_ammo;
-        low_pass_filter = GameObject.Find("Audio_Test").GetComponent<AudioLowPassFilter>();
-        low_pass_filter.cutoffFrequency = 22000;
+        //low_pass_filter = GameObject.Find("Audio_Test").GetComponent<AudioLowPassFilter>();
+        //low_pass_filter.cutoffFrequency = 22000;
     }
 
     void Update()
@@ -363,6 +364,13 @@ public class PlayerController : MonoBehaviour
                 playerShots.shoot = true;
                 playerShots.timePressed = timerShoot;
                 playerShots.totalTime = Time.time;
+
+                Ray mouseRay = Camera.main.ScreenPointToRay(Input.mousePosition);
+                float midPoint = (transform.position - Camera.main.transform.position).magnitude;
+                Vector3 destination = mouseRay.origin + mouseRay.direction * midPoint;
+                destination.y = transform.position.y + 1.5f;
+
+                playerShots.direction = destination;
                 actionsListShoot.Add(playerShots);
             }
 
@@ -376,6 +384,7 @@ public class PlayerController : MonoBehaviour
                     playerShots.shoot = false;
                     playerShots.timePressed = idleTimerShoot;
                     playerShots.totalTime = Time.time;
+                    playerShots.direction = Vector3.zero;
                     actionsListShoot.Add(playerShots);
                 }
                 else
@@ -383,6 +392,7 @@ public class PlayerController : MonoBehaviour
                     playerShots.shoot = false;
                     playerShots.timePressed = Time.time;
                     playerShots.totalTime = Time.time;
+                    playerShots.direction = Vector3.zero;
                     actionsListShoot.Add(playerShots);
                 }
 
@@ -391,7 +401,7 @@ public class PlayerController : MonoBehaviour
 
                 clip_ammo--;
 
-                gun.GetComponent<SpawnBullet>().Shoot();
+                gun.GetComponent<SpawnBullet>().Shoot(Vector3.zero);
             }
             else
             {
