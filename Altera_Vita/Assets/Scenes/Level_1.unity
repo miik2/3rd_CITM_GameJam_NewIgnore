@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.43667564, g: 0.48427135, b: 0.5645232, a: 1}
+  m_IndirectSpecularColor: {r: 0.4366757, g: 0.48427194, b: 0.5645252, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -119,7 +119,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 78cc97bc176fdc449be40c52c9df16c9, type: 2}
 --- !u!1001 &15718029
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -127,10 +127,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1935741784}
     m_Modifications:
-    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
-      propertyPath: m_Name
-      value: Classic_Wall_snaps001 (13)
-      objectReference: {fileID: 0}
     - target: {fileID: 4657047982645578, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
       propertyPath: m_LocalPosition.x
       value: -18.050003
@@ -167,6 +163,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_Name
+      value: Classic_Wall_snaps001 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
 --- !u!4 &15718030 stripped
@@ -185,6 +189,10 @@ PrefabInstance:
     - target: {fileID: 1197108000201912, guid: a9a6af830b7d63749a8d69dc96895156, type: 3}
       propertyPath: m_Name
       value: Classic_Floor_02_snaps001 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1197108000201912, guid: a9a6af830b7d63749a8d69dc96895156, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4254068895072566, guid: a9a6af830b7d63749a8d69dc96895156, type: 3}
       propertyPath: m_LocalPosition.x
@@ -245,10 +253,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 211276220}
     m_Modifications:
-    - target: {fileID: 1768158800978914, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
-      propertyPath: m_Name
-      value: Neo_Pillar_02_S_snaps001 (7)
-      objectReference: {fileID: 0}
     - target: {fileID: 4083613769861144, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.09
@@ -285,6 +289,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.0168
       objectReference: {fileID: 0}
+    - target: {fileID: 1768158800978914, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
+      propertyPath: m_Name
+      value: Neo_Pillar_02_S_snaps001 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1768158800978914, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
 --- !u!4 &47209897 stripped
@@ -303,6 +315,10 @@ PrefabInstance:
     - target: {fileID: 1026955781263852, guid: 7843b542e9ef1324fa4cadf54f39397f, type: 3}
       propertyPath: m_Name
       value: Classic_WallDoorFrame_02_snaps001 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1026955781263852, guid: 7843b542e9ef1324fa4cadf54f39397f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4217857267948842, guid: 7843b542e9ef1324fa4cadf54f39397f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -367,6 +383,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Classic_Floor_01_snaps001
       objectReference: {fileID: 0}
+    - target: {fileID: 1241157690624376, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4516215191552552, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.91
@@ -414,10 +434,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 211276220}
     m_Modifications:
-    - target: {fileID: 1768158800978914, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
-      propertyPath: m_Name
-      value: Neo_Pillar_02_S_snaps001 (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 4083613769861144, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.899998
@@ -453,6 +469,14 @@ PrefabInstance:
     - target: {fileID: 4083613769861144, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
       propertyPath: m_LocalScale.y
       value: 1.0168
+      objectReference: {fileID: 0}
+    - target: {fileID: 1768158800978914, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
+      propertyPath: m_Name
+      value: Neo_Pillar_02_S_snaps001 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1768158800978914, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
@@ -508,6 +532,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Classic_Floor_02_snaps001 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1197108000201912, guid: a9a6af830b7d63749a8d69dc96895156, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4254068895072566, guid: a9a6af830b7d63749a8d69dc96895156, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.7600021
@@ -560,31 +588,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 103195201}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &106362167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
-  m_Name: Enemy_1 - 5 FSM
-  m_EditorClassIdentifier: 
-  _serializedGraph: '{"version":2.85,"type":"NodeCanvas.StateMachines.FSM","translation":{"x":-5016.0,"y":-4759.0},"nodes":[{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"result":{"_name":""},"_targetMethod":{"_baseInfo":"EnemyController|ScanShotsFired|System.Boolean","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedFunction`1[[System.Boolean,
-    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5340.0,"y":4995.0},"_name":"Idle","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"2"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5700.0,"y":5100.0},"_name":"Pursue","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"13"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"_targetMethod":{"_baseInfo":"EnemyController|FireAtTarget|System.Void","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedAction"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5085.0,"y":5190.0},"_name":"Attack","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"20"},{"_position":{"x":5520.0,"y":4830.0},"$type":"NodeCanvas.StateMachines.AnyState","$id":"30"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"actions":[{"valueA":{"_type":"System.Enum","_name":"status","_targetVariableID":"889d9622-583c-45b4-95fa-ab2db5591083"},"valueB":{"_type":"EnemyController+state","_value":{"$content":"DEAD","$type":"EnemyController+state"}},"$type":"NodeCanvas.Tasks.Actions.SetEnum"},{"waitTime":{"_value":5.0},"$type":"NodeCanvas.Tasks.Actions.Wait"},{"$type":"NodeCanvas.Tasks.Actions.DestroyGameObject"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5505.0,"y":4905.0},"$type":"NodeCanvas.StateMachines.SuperActionState","$id":"31"}],"connections":[{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"30"},"_targetNode":{"$ref":"31"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
-    Blackboard","_variables":{}}}'
-  _objectReferences: []
-  _deserializationFailed: 0
 --- !u!1001 &130821071
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -595,6 +598,10 @@ PrefabInstance:
     - target: {fileID: 1241157690624376, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
       propertyPath: m_Name
       value: Classic_Floor_01_snaps001 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1241157690624376, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4516215191552552, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -698,6 +705,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Classic_WallDoorFrame_02_snaps001 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1026955781263852, guid: 7843b542e9ef1324fa4cadf54f39397f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4217857267948842, guid: 7843b542e9ef1324fa4cadf54f39397f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.91
@@ -761,6 +772,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Classic_Floor_01_snaps001
       objectReference: {fileID: 0}
+    - target: {fileID: 1241157690624376, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4516215191552552, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.91
@@ -811,6 +826,10 @@ PrefabInstance:
     - target: {fileID: 1619585040777286, guid: 2dd6a41bf3754ca45a0c700ba7da1771, type: 3}
       propertyPath: m_Name
       value: Classic_Wall_Corner_snaps001 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619585040777286, guid: 2dd6a41bf3754ca45a0c700ba7da1771, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4973419872040736, guid: 2dd6a41bf3754ca45a0c700ba7da1771, type: 3}
       propertyPath: m_LocalPosition.x
@@ -870,7 +889,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &211276220
 Transform:
@@ -943,6 +962,34 @@ Transform:
   m_Father: {fileID: 1724556651}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &212049354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
+  m_Name: Enemy_1 - 1 FSM
+  m_EditorClassIdentifier: 
+  _serializedGraph: '{"version":2.85,"type":"NodeCanvas.StateMachines.FSM","translation":{"x":-4960.999,"y":-4713.999},"nodes":[{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"result":{"_name":""},"_targetMethod":{"_baseInfo":"EnemyController|ScanShotsFired|System.Boolean","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedFunction`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5340.0,"y":4995.0},"_name":"Idle","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"2"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"_targetMethod":{"_baseInfo":"EnemyController|PursueTarget|System.Void","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedAction"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"result":{"_name":""},"_targetMethod":{"_baseInfo":"EnemyController|IsPathFinished|System.Boolean","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedFunction`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[{"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"foldEnter":true,"foldUpdate":true,"foldExit":true,"_position":{"x":5565.0,"y":5100.0},"_name":"Pursue","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"13"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"_targetMethod":{"_baseInfo":"EnemyController|FireAtTarget|System.Void","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedAction"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5085.0,"y":5190.0},"_name":"Attack","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"28"},{"_conditionList":{"conditions":[{"functionWrapper":{"result":{},"_targetMethod":{"_baseInfo":"EnemyController|IsDead|System.Boolean","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedFunction`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"checkValue":{"_value":true,"$type":"NodeCanvas.Framework.BBParameter`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$type":"NodeCanvas.Tasks.Conditions.CheckFunction"}]},"_actionList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"_targetMethod":{"_baseInfo":"EnemyController|SetDead|System.Void","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedAction"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_position":{"x":5535.0,"y":4905.0},"$type":"NodeCanvas.StateMachines.ConcurrentState"}],"connections":[{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"28"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"28"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"28"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"28"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
+    Blackboard","_variables":{}}}'
+  _objectReferences: []
+  _deserializationFailed: 0
 --- !u!1001 &215940475
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -953,6 +1000,10 @@ PrefabInstance:
     - target: {fileID: 1197108000201912, guid: a9a6af830b7d63749a8d69dc96895156, type: 3}
       propertyPath: m_Name
       value: Classic_Floor_02_snaps001 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1197108000201912, guid: a9a6af830b7d63749a8d69dc96895156, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4254068895072566, guid: a9a6af830b7d63749a8d69dc96895156, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1006,31 +1057,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 215940475}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &220275049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
-  m_Name: Enemy_1 - 4 FSM
-  m_EditorClassIdentifier: 
-  _serializedGraph: '{"version":2.85,"type":"NodeCanvas.StateMachines.FSM","translation":{"x":-5016.0,"y":-4759.0},"nodes":[{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"result":{"_name":""},"_targetMethod":{"_baseInfo":"EnemyController|ScanShotsFired|System.Boolean","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedFunction`1[[System.Boolean,
-    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5340.0,"y":4995.0},"_name":"Idle","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"2"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5700.0,"y":5100.0},"_name":"Pursue","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"13"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"_targetMethod":{"_baseInfo":"EnemyController|FireAtTarget|System.Void","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedAction"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5085.0,"y":5190.0},"_name":"Attack","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"20"},{"_position":{"x":5520.0,"y":4830.0},"$type":"NodeCanvas.StateMachines.AnyState","$id":"30"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"actions":[{"valueA":{"_type":"System.Enum","_name":"status","_targetVariableID":"889d9622-583c-45b4-95fa-ab2db5591083"},"valueB":{"_type":"EnemyController+state","_value":{"$content":"DEAD","$type":"EnemyController+state"}},"$type":"NodeCanvas.Tasks.Actions.SetEnum"},{"waitTime":{"_value":5.0},"$type":"NodeCanvas.Tasks.Actions.Wait"},{"$type":"NodeCanvas.Tasks.Actions.DestroyGameObject"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5505.0,"y":4905.0},"$type":"NodeCanvas.StateMachines.SuperActionState","$id":"31"}],"connections":[{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"30"},"_targetNode":{"$ref":"31"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
-    Blackboard","_variables":{}}}'
-  _objectReferences: []
-  _deserializationFailed: 0
 --- !u!1001 &238161323
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1038,10 +1064,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1935741784}
     m_Modifications:
-    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
-      propertyPath: m_Name
-      value: Classic_Wall_snaps001 (12)
-      objectReference: {fileID: 0}
     - target: {fileID: 4657047982645578, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
       propertyPath: m_LocalPosition.x
       value: -21.02
@@ -1078,6 +1100,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_Name
+      value: Classic_Wall_snaps001 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
 --- !u!4 &238161324 stripped
@@ -1093,10 +1123,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 211276220}
     m_Modifications:
-    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
-      propertyPath: m_Name
-      value: Classic_Wall_snaps001 (21)
-      objectReference: {fileID: 0}
     - target: {fileID: 4657047982645578, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.782228
@@ -1133,6 +1159,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 359.986
       objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_Name
+      value: Classic_Wall_snaps001 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
 --- !u!4 &239471578 stripped
@@ -1141,31 +1175,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 239471577}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &255473604
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
-  m_Name: Enemy_1 - 2 FSM
-  m_EditorClassIdentifier: 
-  _serializedGraph: '{"version":2.85,"type":"NodeCanvas.StateMachines.FSM","translation":{"x":-5016.0,"y":-4759.0},"nodes":[{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"result":{"_name":""},"_targetMethod":{"_baseInfo":"EnemyController|ScanShotsFired|System.Boolean","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedFunction`1[[System.Boolean,
-    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5340.0,"y":4995.0},"_name":"Idle","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"2"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5700.0,"y":5100.0},"_name":"Pursue","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"13"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"_targetMethod":{"_baseInfo":"EnemyController|FireAtTarget|System.Void","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedAction"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5085.0,"y":5190.0},"_name":"Attack","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"20"},{"_position":{"x":5520.0,"y":4830.0},"$type":"NodeCanvas.StateMachines.AnyState","$id":"30"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"actions":[{"valueA":{"_type":"System.Enum","_name":"status","_targetVariableID":"889d9622-583c-45b4-95fa-ab2db5591083"},"valueB":{"_type":"EnemyController+state","_value":{"$content":"DEAD","$type":"EnemyController+state"}},"$type":"NodeCanvas.Tasks.Actions.SetEnum"},{"waitTime":{"_value":5.0},"$type":"NodeCanvas.Tasks.Actions.Wait"},{"$type":"NodeCanvas.Tasks.Actions.DestroyGameObject"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5505.0,"y":4905.0},"$type":"NodeCanvas.StateMachines.SuperActionState","$id":"31"}],"connections":[{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"30"},"_targetNode":{"$ref":"31"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
-    Blackboard","_variables":{}}}'
-  _objectReferences: []
-  _deserializationFailed: 0
 --- !u!1001 &255835494
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1173,10 +1182,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 211276220}
     m_Modifications:
-    - target: {fileID: 1768158800978914, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
-      propertyPath: m_Name
-      value: Neo_Pillar_02_S_snaps001 (12)
-      objectReference: {fileID: 0}
     - target: {fileID: 4083613769861144, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.739992
@@ -1217,6 +1222,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 179.98601
       objectReference: {fileID: 0}
+    - target: {fileID: 1768158800978914, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
+      propertyPath: m_Name
+      value: Neo_Pillar_02_S_snaps001 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1768158800978914, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
 --- !u!4 &255835495 stripped
@@ -1235,6 +1248,10 @@ PrefabInstance:
     - target: {fileID: 1241157690624376, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
       propertyPath: m_Name
       value: Classic_Floor_01_snaps001 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1241157690624376, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4516215191552552, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1287,10 +1304,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1652624227}
     m_Modifications:
-    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
-      propertyPath: m_Name
-      value: Classic_Wall_snaps001 (9)
-      objectReference: {fileID: 0}
     - target: {fileID: 4657047982645578, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
       propertyPath: m_LocalPosition.x
       value: -37.829998
@@ -1327,6 +1340,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_Name
+      value: Classic_Wall_snaps001 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
 --- !u!4 &291022620 stripped
@@ -1342,10 +1363,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 211276220}
     m_Modifications:
-    - target: {fileID: 1768158800978914, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
-      propertyPath: m_Name
-      value: Neo_Pillar_02_S_snaps001 (8)
-      objectReference: {fileID: 0}
     - target: {fileID: 4083613769861144, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.09
@@ -1382,6 +1399,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.0168
       objectReference: {fileID: 0}
+    - target: {fileID: 1768158800978914, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
+      propertyPath: m_Name
+      value: Neo_Pillar_02_S_snaps001 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1768158800978914, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
 --- !u!4 &303881845 stripped
@@ -1396,31 +1421,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 808496147}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &310352530
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
-  m_Name: Enemy_1 - 5 FSM
-  m_EditorClassIdentifier: 
-  _serializedGraph: '{"version":2.85,"type":"NodeCanvas.StateMachines.FSM","translation":{"x":-5016.0,"y":-4759.0},"nodes":[{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"result":{"_name":""},"_targetMethod":{"_baseInfo":"EnemyController|ScanShotsFired|System.Boolean","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedFunction`1[[System.Boolean,
-    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5340.0,"y":4995.0},"_name":"Idle","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"2"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5700.0,"y":5100.0},"_name":"Pursue","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"13"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"_targetMethod":{"_baseInfo":"EnemyController|FireAtTarget|System.Void","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedAction"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5085.0,"y":5190.0},"_name":"Attack","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"20"},{"_position":{"x":5520.0,"y":4830.0},"$type":"NodeCanvas.StateMachines.AnyState","$id":"30"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"actions":[{"valueA":{"_type":"System.Enum","_name":"status","_targetVariableID":"889d9622-583c-45b4-95fa-ab2db5591083"},"valueB":{"_type":"EnemyController+state","_value":{"$content":"DEAD","$type":"EnemyController+state"}},"$type":"NodeCanvas.Tasks.Actions.SetEnum"},{"waitTime":{"_value":5.0},"$type":"NodeCanvas.Tasks.Actions.Wait"},{"$type":"NodeCanvas.Tasks.Actions.DestroyGameObject"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5505.0,"y":4905.0},"$type":"NodeCanvas.StateMachines.SuperActionState","$id":"31"}],"connections":[{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"30"},"_targetNode":{"$ref":"31"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
-    Blackboard","_variables":{}}}'
-  _objectReferences: []
-  _deserializationFailed: 0
 --- !u!1001 &318812673
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1488,26 +1488,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1483336464600108540, guid: 1bbf7220a167dc04783274e17ed9a4ff,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1483336464600108540, guid: 1bbf7220a167dc04783274e17ed9a4ff,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1483336464600108540, guid: 1bbf7220a167dc04783274e17ed9a4ff,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1483336464267598829, guid: 1bbf7220a167dc04783274e17ed9a4ff,
-        type: 3}
-      propertyPath: startingRotation.y
-      value: 90
-      objectReference: {fileID: 0}
     - target: {fileID: 1483336464267598829, guid: 1bbf7220a167dc04783274e17ed9a4ff,
         type: 3}
       propertyPath: startingPosition.x
@@ -1523,11 +1503,16 @@ PrefabInstance:
       propertyPath: startingPosition.z
       value: 13.28
       objectReference: {fileID: 0}
+    - target: {fileID: 1483336464267598829, guid: 1bbf7220a167dc04783274e17ed9a4ff,
+        type: 3}
+      propertyPath: startingRotation.y
+      value: 90
+      objectReference: {fileID: 0}
     - target: {fileID: 7421351600209570878, guid: 1bbf7220a167dc04783274e17ed9a4ff,
         type: 3}
       propertyPath: _graph
       value: 
-      objectReference: {fileID: 1895260191}
+      objectReference: {fileID: 212049354}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bbf7220a167dc04783274e17ed9a4ff, type: 3}
 --- !u!1001 &346205566
@@ -1540,6 +1525,10 @@ PrefabInstance:
     - target: {fileID: 1241157690624376, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
       propertyPath: m_Name
       value: Classic_Floor_01_snaps001 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1241157690624376, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4516215191552552, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1588,10 +1577,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 211276220}
     m_Modifications:
-    - target: {fileID: 1640072036712758, guid: c19d995d1197f6644b00037295f526de, type: 3}
-      propertyPath: m_Name
-      value: Classic_WallDoor_01_snaps001 (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 4710702754372676, guid: c19d995d1197f6644b00037295f526de, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.8
@@ -1636,6 +1621,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1640072036712758, guid: c19d995d1197f6644b00037295f526de, type: 3}
+      propertyPath: m_Name
+      value: Classic_WallDoor_01_snaps001 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1640072036712758, guid: c19d995d1197f6644b00037295f526de, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c19d995d1197f6644b00037295f526de, type: 3}
 --- !u!4 &353777486 stripped
@@ -1651,10 +1644,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 211276220}
     m_Modifications:
-    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
-      propertyPath: m_Name
-      value: Classic_Wall_snaps001 (23)
-      objectReference: {fileID: 0}
     - target: {fileID: 4657047982645578, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.940006
@@ -1691,6 +1680,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_Name
+      value: Classic_Wall_snaps001 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
 --- !u!4 &360616002 stripped
@@ -1706,10 +1703,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 211276220}
     m_Modifications:
-    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
-      propertyPath: m_Name
-      value: Classic_Wall_snaps001 (8)
-      objectReference: {fileID: 0}
     - target: {fileID: 4657047982645578, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6
@@ -1746,6 +1739,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 180.00002
       objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_Name
+      value: Classic_Wall_snaps001 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
 --- !u!4 &379219719 stripped
@@ -1764,6 +1765,10 @@ PrefabInstance:
     - target: {fileID: 1241157690624376, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
       propertyPath: m_Name
       value: Classic_Floor_01_snaps001 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1241157690624376, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4516215191552552, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1923,21 +1928,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1483336464600108540, guid: 1bbf7220a167dc04783274e17ed9a4ff,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1483336464600108540, guid: 1bbf7220a167dc04783274e17ed9a4ff,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1483336464600108540, guid: 1bbf7220a167dc04783274e17ed9a4ff,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.1
-      objectReference: {fileID: 0}
     - target: {fileID: 1483336464267598829, guid: 1bbf7220a167dc04783274e17ed9a4ff,
         type: 3}
       propertyPath: startingPosition.x
@@ -1962,7 +1952,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _graph
       value: 
-      objectReference: {fileID: 1483350547}
+      objectReference: {fileID: 1080395127}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bbf7220a167dc04783274e17ed9a4ff, type: 3}
 --- !u!1 &438588330
@@ -2056,6 +2046,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &454158274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
+  m_Name: Enemy_1 - 5 FSM
+  m_EditorClassIdentifier: 
+  _serializedGraph: '{"version":2.85,"type":"NodeCanvas.StateMachines.FSM","translation":{"x":-4960.999,"y":-4713.999},"nodes":[{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"result":{"_name":""},"_targetMethod":{"_baseInfo":"EnemyController|ScanShotsFired|System.Boolean","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedFunction`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5340.0,"y":4995.0},"_name":"Idle","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"2"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"_targetMethod":{"_baseInfo":"EnemyController|PursueTarget|System.Void","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedAction"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"result":{"_name":""},"_targetMethod":{"_baseInfo":"EnemyController|IsPathFinished|System.Boolean","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedFunction`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[{"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"foldEnter":true,"foldUpdate":true,"foldExit":true,"_position":{"x":5565.0,"y":5100.0},"_name":"Pursue","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"13"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"_targetMethod":{"_baseInfo":"EnemyController|FireAtTarget|System.Void","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedAction"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5085.0,"y":5190.0},"_name":"Attack","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"28"},{"_conditionList":{"conditions":[{"functionWrapper":{"result":{},"_targetMethod":{"_baseInfo":"EnemyController|IsDead|System.Boolean","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedFunction`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"checkValue":{"_value":true,"$type":"NodeCanvas.Framework.BBParameter`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$type":"NodeCanvas.Tasks.Conditions.CheckFunction"}]},"_actionList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"_targetMethod":{"_baseInfo":"EnemyController|SetDead|System.Void","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedAction"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_position":{"x":5535.0,"y":4905.0},"$type":"NodeCanvas.StateMachines.ConcurrentState"}],"connections":[{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"28"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"28"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"28"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"28"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
+    Blackboard","_variables":{}}}'
+  _objectReferences: []
+  _deserializationFailed: 0
 --- !u!1 &467757136
 GameObject:
   m_ObjectHideFlags: 0
@@ -2231,6 +2249,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Classic_Wall_Corner_snaps001 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1619585040777286, guid: 2dd6a41bf3754ca45a0c700ba7da1771, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4973419872040736, guid: 2dd6a41bf3754ca45a0c700ba7da1771, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.829994
@@ -2282,10 +2304,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 211276220}
     m_Modifications:
-    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
-      propertyPath: m_Name
-      value: Classic_Wall_snaps001 (6)
-      objectReference: {fileID: 0}
     - target: {fileID: 4657047982645578, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
       propertyPath: m_LocalPosition.x
       value: -14.95
@@ -2322,6 +2340,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 180.00002
       objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_Name
+      value: Classic_Wall_snaps001 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
 --- !u!4 &500417365 stripped
@@ -2340,6 +2366,10 @@ PrefabInstance:
     - target: {fileID: 1197108000201912, guid: a9a6af830b7d63749a8d69dc96895156, type: 3}
       propertyPath: m_Name
       value: Classic_Floor_02_snaps001 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1197108000201912, guid: a9a6af830b7d63749a8d69dc96895156, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4254068895072566, guid: a9a6af830b7d63749a8d69dc96895156, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2585,10 +2615,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 211276220}
     m_Modifications:
-    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
-      propertyPath: m_Name
-      value: Classic_Wall_snaps001 (7)
-      objectReference: {fileID: 0}
     - target: {fileID: 4657047982645578, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
       propertyPath: m_LocalPosition.x
       value: -14.950001
@@ -2624,6 +2650,14 @@ PrefabInstance:
     - target: {fileID: 4657047982645578, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 180.00002
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_Name
+      value: Classic_Wall_snaps001 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
@@ -2768,6 +2802,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Classic_Wall_Corner_snaps001 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1619585040777286, guid: 2dd6a41bf3754ca45a0c700ba7da1771, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4973419872040736, guid: 2dd6a41bf3754ca45a0c700ba7da1771, type: 3}
       propertyPath: m_LocalPosition.x
       value: -43.949997
@@ -2815,10 +2853,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 211276220}
     m_Modifications:
-    - target: {fileID: 1768158800978914, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
-      propertyPath: m_Name
-      value: Neo_Pillar_02_S_snaps001 (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 4083613769861144, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.899998
@@ -2855,6 +2889,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.0168
       objectReference: {fileID: 0}
+    - target: {fileID: 1768158800978914, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
+      propertyPath: m_Name
+      value: Neo_Pillar_02_S_snaps001 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1768158800978914, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
 --- !u!4 &586888369 stripped
@@ -2863,6 +2905,34 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 586888368}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &617149003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
+  m_Name: Enemy_1 - 3 FSM
+  m_EditorClassIdentifier: 
+  _serializedGraph: '{"version":2.85,"type":"NodeCanvas.StateMachines.FSM","translation":{"x":-4960.999,"y":-4713.999},"nodes":[{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"result":{"_name":""},"_targetMethod":{"_baseInfo":"EnemyController|ScanShotsFired|System.Boolean","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedFunction`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5340.0,"y":4995.0},"_name":"Idle","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"2"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"_targetMethod":{"_baseInfo":"EnemyController|PursueTarget|System.Void","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedAction"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"result":{"_name":""},"_targetMethod":{"_baseInfo":"EnemyController|IsPathFinished|System.Boolean","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedFunction`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[{"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"foldEnter":true,"foldUpdate":true,"foldExit":true,"_position":{"x":5565.0,"y":5100.0},"_name":"Pursue","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"13"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"_targetMethod":{"_baseInfo":"EnemyController|FireAtTarget|System.Void","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedAction"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5085.0,"y":5190.0},"_name":"Attack","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"28"},{"_conditionList":{"conditions":[{"functionWrapper":{"result":{},"_targetMethod":{"_baseInfo":"EnemyController|IsDead|System.Boolean","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedFunction`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"checkValue":{"_value":true,"$type":"NodeCanvas.Framework.BBParameter`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$type":"NodeCanvas.Tasks.Conditions.CheckFunction"}]},"_actionList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"_targetMethod":{"_baseInfo":"EnemyController|SetDead|System.Void","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedAction"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_position":{"x":5535.0,"y":4905.0},"$type":"NodeCanvas.StateMachines.ConcurrentState"}],"connections":[{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"28"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"28"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"28"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"28"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
+    Blackboard","_variables":{}}}'
+  _objectReferences: []
+  _deserializationFailed: 0
 --- !u!1001 &628815371
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2873,6 +2943,10 @@ PrefabInstance:
     - target: {fileID: 1241157690624376, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
       propertyPath: m_Name
       value: Classic_Floor_01_snaps001 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1241157690624376, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4516215191552552, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3018,10 +3092,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 211276220}
     m_Modifications:
-    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
-      propertyPath: m_Name
-      value: Classic_Wall_snaps001 (19)
-      objectReference: {fileID: 0}
     - target: {fileID: 4657047982645578, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
       propertyPath: m_LocalPosition.x
       value: 11.822224
@@ -3058,6 +3128,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 359.986
       objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_Name
+      value: Classic_Wall_snaps001 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
 --- !u!4 &642490132 stripped
@@ -3076,6 +3154,10 @@ PrefabInstance:
     - target: {fileID: 1619585040777286, guid: 2dd6a41bf3754ca45a0c700ba7da1771, type: 3}
       propertyPath: m_Name
       value: Classic_Wall_Corner_snaps001 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619585040777286, guid: 2dd6a41bf3754ca45a0c700ba7da1771, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4973419872040736, guid: 2dd6a41bf3754ca45a0c700ba7da1771, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3135,7 +3217,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &671417546
 Transform:
@@ -3251,6 +3333,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Classic_Floor_01_snaps001 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 1241157690624376, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4516215191552552, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
       propertyPath: m_LocalPosition.x
       value: -20.87
@@ -3364,6 +3450,10 @@ PrefabInstance:
     - target: {fileID: 1241157690624376, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
       propertyPath: m_Name
       value: Classic_Floor_01_snaps001 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1241157690624376, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4516215191552552, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3503,10 +3593,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 211276220}
     m_Modifications:
-    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
-      propertyPath: m_Name
-      value: Classic_Wall_snaps001 (26)
-      objectReference: {fileID: 0}
     - target: {fileID: 4657047982645578, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.17
@@ -3542,6 +3628,14 @@ PrefabInstance:
     - target: {fileID: 4657047982645578, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_Name
+      value: Classic_Wall_snaps001 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
@@ -3652,10 +3746,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 211276220}
     m_Modifications:
-    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
-      propertyPath: m_Name
-      value: Classic_Wall_snaps001 (13)
-      objectReference: {fileID: 0}
     - target: {fileID: 4657047982645578, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.850002
@@ -3692,6 +3782,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_Name
+      value: Classic_Wall_snaps001 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
 --- !u!4 &773886025 stripped
@@ -3710,6 +3808,10 @@ PrefabInstance:
     - target: {fileID: 1736829470956072, guid: 9b1b38ad56a221f4bb6ad963a1996883, type: 3}
       propertyPath: m_Name
       value: Neo_Floor_02_snaps001 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1736829470956072, guid: 9b1b38ad56a221f4bb6ad963a1996883, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4561544271246036, guid: 9b1b38ad56a221f4bb6ad963a1996883, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3758,10 +3860,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1652624227}
     m_Modifications:
-    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
-      propertyPath: m_Name
-      value: Classic_Wall_snaps001 (8)
-      objectReference: {fileID: 0}
     - target: {fileID: 4657047982645578, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
       propertyPath: m_LocalPosition.x
       value: -40.949997
@@ -3797,6 +3895,14 @@ PrefabInstance:
     - target: {fileID: 4657047982645578, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_Name
+      value: Classic_Wall_snaps001 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
@@ -3873,26 +3979,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1483336464600108540, guid: 1bbf7220a167dc04783274e17ed9a4ff,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1483336464600108540, guid: 1bbf7220a167dc04783274e17ed9a4ff,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1483336464600108540, guid: 1bbf7220a167dc04783274e17ed9a4ff,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1483336464267598829, guid: 1bbf7220a167dc04783274e17ed9a4ff,
-        type: 3}
-      propertyPath: startingRotation.y
-      value: 240
-      objectReference: {fileID: 0}
     - target: {fileID: 1483336464267598829, guid: 1bbf7220a167dc04783274e17ed9a4ff,
         type: 3}
       propertyPath: startingPosition.x
@@ -3908,11 +3994,16 @@ PrefabInstance:
       propertyPath: startingPosition.z
       value: -1.28
       objectReference: {fileID: 0}
+    - target: {fileID: 1483336464267598829, guid: 1bbf7220a167dc04783274e17ed9a4ff,
+        type: 3}
+      propertyPath: startingRotation.y
+      value: 240
+      objectReference: {fileID: 0}
     - target: {fileID: 7421351600209570878, guid: 1bbf7220a167dc04783274e17ed9a4ff,
         type: 3}
       propertyPath: _graph
       value: 
-      objectReference: {fileID: 220275049}
+      objectReference: {fileID: 1470602344}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bbf7220a167dc04783274e17ed9a4ff, type: 3}
 --- !u!1001 &819617051
@@ -3925,6 +4016,10 @@ PrefabInstance:
     - target: {fileID: 1619585040777286, guid: 2dd6a41bf3754ca45a0c700ba7da1771, type: 3}
       propertyPath: m_Name
       value: Classic_Wall_Corner_snaps001 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619585040777286, guid: 2dd6a41bf3754ca45a0c700ba7da1771, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4973419872040736, guid: 2dd6a41bf3754ca45a0c700ba7da1771, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3970,31 +4065,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 819617051}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &825279043
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
-  m_Name: Enemy_1 - 3 FSM
-  m_EditorClassIdentifier: 
-  _serializedGraph: '{"version":2.85,"type":"NodeCanvas.StateMachines.FSM","translation":{"x":-5016.0,"y":-4759.0},"nodes":[{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"result":{"_name":""},"_targetMethod":{"_baseInfo":"EnemyController|ScanShotsFired|System.Boolean","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedFunction`1[[System.Boolean,
-    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5340.0,"y":4995.0},"_name":"Idle","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"2"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5700.0,"y":5100.0},"_name":"Pursue","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"13"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"_targetMethod":{"_baseInfo":"EnemyController|FireAtTarget|System.Void","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedAction"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5085.0,"y":5190.0},"_name":"Attack","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"20"},{"_position":{"x":5520.0,"y":4830.0},"$type":"NodeCanvas.StateMachines.AnyState","$id":"30"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"actions":[{"valueA":{"_type":"System.Enum","_name":"status","_targetVariableID":"889d9622-583c-45b4-95fa-ab2db5591083"},"valueB":{"_type":"EnemyController+state","_value":{"$content":"DEAD","$type":"EnemyController+state"}},"$type":"NodeCanvas.Tasks.Actions.SetEnum"},{"waitTime":{"_value":5.0},"$type":"NodeCanvas.Tasks.Actions.Wait"},{"$type":"NodeCanvas.Tasks.Actions.DestroyGameObject"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5505.0,"y":4905.0},"$type":"NodeCanvas.StateMachines.SuperActionState","$id":"31"}],"connections":[{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"30"},"_targetNode":{"$ref":"31"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
-    Blackboard","_variables":{}}}'
-  _objectReferences: []
-  _deserializationFailed: 0
 --- !u!1 &827335696 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7132615796217258820, guid: b2b5e258c40b0e0418bbb29bfb16c0ac,
@@ -4133,6 +4203,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Classic_Floor_02_snaps001 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1197108000201912, guid: a9a6af830b7d63749a8d69dc96895156, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4254068895072566, guid: a9a6af830b7d63749a8d69dc96895156, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.7600021
@@ -4195,6 +4269,10 @@ PrefabInstance:
     - target: {fileID: 1241157690624376, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
       propertyPath: m_Name
       value: Classic_Floor_01_snaps001 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1241157690624376, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4516215191552552, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4338,6 +4416,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Neo_Floor_02_snaps001 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1736829470956072, guid: 9b1b38ad56a221f4bb6ad963a1996883, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4561544271246036, guid: 9b1b38ad56a221f4bb6ad963a1996883, type: 3}
       propertyPath: m_LocalPosition.x
       value: -37.97
@@ -4445,26 +4527,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1483336464600108540, guid: 1bbf7220a167dc04783274e17ed9a4ff,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1483336464600108540, guid: 1bbf7220a167dc04783274e17ed9a4ff,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1483336464600108540, guid: 1bbf7220a167dc04783274e17ed9a4ff,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1483336464267598829, guid: 1bbf7220a167dc04783274e17ed9a4ff,
-        type: 3}
-      propertyPath: startingRotation.y
-      value: 60
-      objectReference: {fileID: 0}
     - target: {fileID: 1483336464267598829, guid: 1bbf7220a167dc04783274e17ed9a4ff,
         type: 3}
       propertyPath: startingPosition.x
@@ -4480,11 +4542,16 @@ PrefabInstance:
       propertyPath: startingPosition.z
       value: -8.11
       objectReference: {fileID: 0}
+    - target: {fileID: 1483336464267598829, guid: 1bbf7220a167dc04783274e17ed9a4ff,
+        type: 3}
+      propertyPath: startingRotation.y
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 7421351600209570878, guid: 1bbf7220a167dc04783274e17ed9a4ff,
         type: 3}
       propertyPath: _graph
       value: 
-      objectReference: {fileID: 1697068332}
+      objectReference: {fileID: 617149003}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bbf7220a167dc04783274e17ed9a4ff, type: 3}
 --- !u!1001 &987296572
@@ -4494,10 +4561,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 211276220}
     m_Modifications:
-    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
-      propertyPath: m_Name
-      value: Classic_Wall_snaps001 (10)
-      objectReference: {fileID: 0}
     - target: {fileID: 4657047982645578, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6
@@ -4533,6 +4596,14 @@ PrefabInstance:
     - target: {fileID: 4657047982645578, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 180.00002
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_Name
+      value: Classic_Wall_snaps001 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
@@ -4599,10 +4670,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 211276220}
     m_Modifications:
-    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
-      propertyPath: m_Name
-      value: Classic_Wall_snaps001 (16)
-      objectReference: {fileID: 0}
     - target: {fileID: 4657047982645578, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.850002
@@ -4639,6 +4706,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_Name
+      value: Classic_Wall_snaps001 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
 --- !u!4 &1000057627 stripped
@@ -4654,10 +4729,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 211276220}
     m_Modifications:
-    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
-      propertyPath: m_Name
-      value: Classic_Wall_snaps001 (15)
-      objectReference: {fileID: 0}
     - target: {fileID: 4657047982645578, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.91
@@ -4694,6 +4765,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 180.00002
       objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_Name
+      value: Classic_Wall_snaps001 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
 --- !u!4 &1007343983 stripped
@@ -4712,6 +4791,10 @@ PrefabInstance:
     - target: {fileID: 1619585040777286, guid: 2dd6a41bf3754ca45a0c700ba7da1771, type: 3}
       propertyPath: m_Name
       value: Classic_Wall_Corner_snaps001 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619585040777286, guid: 2dd6a41bf3754ca45a0c700ba7da1771, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4973419872040736, guid: 2dd6a41bf3754ca45a0c700ba7da1771, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4768,6 +4851,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Classic_Floor_02_snaps001 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1197108000201912, guid: a9a6af830b7d63749a8d69dc96895156, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4254068895072566, guid: a9a6af830b7d63749a8d69dc96895156, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.1000023
@@ -4820,6 +4907,34 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1049794510}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1080395127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
+  m_Name: Enemy_1 - 2 FSM
+  m_EditorClassIdentifier: 
+  _serializedGraph: '{"version":2.85,"type":"NodeCanvas.StateMachines.FSM","translation":{"x":-4960.999,"y":-4713.999},"nodes":[{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"result":{"_name":""},"_targetMethod":{"_baseInfo":"EnemyController|ScanShotsFired|System.Boolean","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedFunction`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5340.0,"y":4995.0},"_name":"Idle","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"2"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"_targetMethod":{"_baseInfo":"EnemyController|PursueTarget|System.Void","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedAction"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"result":{"_name":""},"_targetMethod":{"_baseInfo":"EnemyController|IsPathFinished|System.Boolean","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedFunction`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[{"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"foldEnter":true,"foldUpdate":true,"foldExit":true,"_position":{"x":5565.0,"y":5100.0},"_name":"Pursue","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"13"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"_targetMethod":{"_baseInfo":"EnemyController|FireAtTarget|System.Void","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedAction"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5085.0,"y":5190.0},"_name":"Attack","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"28"},{"_conditionList":{"conditions":[{"functionWrapper":{"result":{},"_targetMethod":{"_baseInfo":"EnemyController|IsDead|System.Boolean","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedFunction`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"checkValue":{"_value":true,"$type":"NodeCanvas.Framework.BBParameter`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$type":"NodeCanvas.Tasks.Conditions.CheckFunction"}]},"_actionList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"_targetMethod":{"_baseInfo":"EnemyController|SetDead|System.Void","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedAction"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_position":{"x":5535.0,"y":4905.0},"$type":"NodeCanvas.StateMachines.ConcurrentState"}],"connections":[{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"28"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"28"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"28"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"28"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
+    Blackboard","_variables":{}}}'
+  _objectReferences: []
+  _deserializationFailed: 0
 --- !u!1001 &1104496720
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4830,6 +4945,10 @@ PrefabInstance:
     - target: {fileID: 1197108000201912, guid: a9a6af830b7d63749a8d69dc96895156, type: 3}
       propertyPath: m_Name
       value: Classic_Floor_02_snaps001 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1197108000201912, guid: a9a6af830b7d63749a8d69dc96895156, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4254068895072566, guid: a9a6af830b7d63749a8d69dc96895156, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4883,31 +5002,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1104496720}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1130309409
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
-  m_Name: Enemy_1 - 4 FSM
-  m_EditorClassIdentifier: 
-  _serializedGraph: '{"version":2.85,"type":"NodeCanvas.StateMachines.FSM","translation":{"x":-5016.0,"y":-4759.0},"nodes":[{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"result":{"_name":""},"_targetMethod":{"_baseInfo":"EnemyController|ScanShotsFired|System.Boolean","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedFunction`1[[System.Boolean,
-    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5340.0,"y":4995.0},"_name":"Idle","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"2"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5700.0,"y":5100.0},"_name":"Pursue","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"13"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"_targetMethod":{"_baseInfo":"EnemyController|FireAtTarget|System.Void","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedAction"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5085.0,"y":5190.0},"_name":"Attack","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"20"},{"_position":{"x":5520.0,"y":4830.0},"$type":"NodeCanvas.StateMachines.AnyState","$id":"30"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"actions":[{"valueA":{"_type":"System.Enum","_name":"status","_targetVariableID":"889d9622-583c-45b4-95fa-ab2db5591083"},"valueB":{"_type":"EnemyController+state","_value":{"$content":"DEAD","$type":"EnemyController+state"}},"$type":"NodeCanvas.Tasks.Actions.SetEnum"},{"waitTime":{"_value":5.0},"$type":"NodeCanvas.Tasks.Actions.Wait"},{"$type":"NodeCanvas.Tasks.Actions.DestroyGameObject"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5505.0,"y":4905.0},"$type":"NodeCanvas.StateMachines.SuperActionState","$id":"31"}],"connections":[{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"30"},"_targetNode":{"$ref":"31"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
-    Blackboard","_variables":{}}}'
-  _objectReferences: []
-  _deserializationFailed: 0
 --- !u!1 &1136442024
 GameObject:
   m_ObjectHideFlags: 0
@@ -4994,10 +5088,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1652624227}
     m_Modifications:
-    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
-      propertyPath: m_Name
-      value: Classic_Wall_snaps001 (10)
-      objectReference: {fileID: 0}
     - target: {fileID: 4657047982645578, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
       propertyPath: m_LocalPosition.x
       value: -47.04
@@ -5034,6 +5124,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_Name
+      value: Classic_Wall_snaps001 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
 --- !u!4 &1148233166 stripped
@@ -5049,10 +5147,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1935741784}
     m_Modifications:
-    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
-      propertyPath: m_Name
-      value: Classic_Wall_snaps001 (11)
-      objectReference: {fileID: 0}
     - target: {fileID: 4657047982645578, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
       propertyPath: m_LocalPosition.x
       value: -18.050003
@@ -5089,6 +5183,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_Name
+      value: Classic_Wall_snaps001 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
 --- !u!4 &1195081985 stripped
@@ -5107,6 +5209,10 @@ PrefabInstance:
     - target: {fileID: 1241157690624376, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
       propertyPath: m_Name
       value: Classic_Floor_01_snaps001 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1241157690624376, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4516215191552552, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5158,6 +5264,10 @@ PrefabInstance:
     - target: {fileID: 1241157690624376, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
       propertyPath: m_Name
       value: Classic_Floor_01_snaps001 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1241157690624376, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4516215191552552, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5305,6 +5415,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Classic_Floor_02_snaps001 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1197108000201912, guid: a9a6af830b7d63749a8d69dc96895156, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4254068895072566, guid: a9a6af830b7d63749a8d69dc96895156, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.13999939
@@ -5368,6 +5482,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Neo_Floor_02_snaps001
       objectReference: {fileID: 0}
+    - target: {fileID: 1736829470956072, guid: 9b1b38ad56a221f4bb6ad963a1996883, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4561544271246036, guid: 9b1b38ad56a221f4bb6ad963a1996883, type: 3}
       propertyPath: m_LocalPosition.x
       value: -43.97
@@ -5415,10 +5533,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 211276220}
     m_Modifications:
-    - target: {fileID: 1640072036712758, guid: c19d995d1197f6644b00037295f526de, type: 3}
-      propertyPath: m_Name
-      value: Classic_WallDoor_01_snaps001 (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 4710702754372676, guid: c19d995d1197f6644b00037295f526de, type: 3}
       propertyPath: m_LocalPosition.x
       value: -20.89
@@ -5463,6 +5577,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1640072036712758, guid: c19d995d1197f6644b00037295f526de, type: 3}
+      propertyPath: m_Name
+      value: Classic_WallDoor_01_snaps001 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1640072036712758, guid: c19d995d1197f6644b00037295f526de, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c19d995d1197f6644b00037295f526de, type: 3}
 --- !u!4 &1242445171 stripped
@@ -5477,31 +5599,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 942586407}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1253628107
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
-  m_Name: Enemy_1 - 1 FSM
-  m_EditorClassIdentifier: 
-  _serializedGraph: '{"version":2.85,"type":"NodeCanvas.StateMachines.FSM","translation":{"x":-5016.0,"y":-4759.0},"nodes":[{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"result":{"_name":""},"_targetMethod":{"_baseInfo":"EnemyController|ScanShotsFired|System.Boolean","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedFunction`1[[System.Boolean,
-    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5340.0,"y":4995.0},"_name":"Idle","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"2"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5700.0,"y":5100.0},"_name":"Pursue","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"13"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"_targetMethod":{"_baseInfo":"EnemyController|FireAtTarget|System.Void","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedAction"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5085.0,"y":5190.0},"_name":"Attack","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"20"},{"_position":{"x":5520.0,"y":4830.0},"$type":"NodeCanvas.StateMachines.AnyState","$id":"30"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"actions":[{"valueA":{"_type":"System.Enum","_name":"status","_targetVariableID":"889d9622-583c-45b4-95fa-ab2db5591083"},"valueB":{"_type":"EnemyController+state","_value":{"$content":"DEAD","$type":"EnemyController+state"}},"$type":"NodeCanvas.Tasks.Actions.SetEnum"},{"waitTime":{"_value":5.0},"$type":"NodeCanvas.Tasks.Actions.Wait"},{"$type":"NodeCanvas.Tasks.Actions.DestroyGameObject"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5505.0,"y":4905.0},"$type":"NodeCanvas.StateMachines.SuperActionState","$id":"31"}],"connections":[{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"30"},"_targetNode":{"$ref":"31"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
-    Blackboard","_variables":{}}}'
-  _objectReferences: []
-  _deserializationFailed: 0
 --- !u!114 &1274229550 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5491121762352101443, guid: 82903dc6d062c324c837b162f0d90f96,
@@ -5521,10 +5618,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 211276220}
     m_Modifications:
-    - target: {fileID: 1768158800978914, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
-      propertyPath: m_Name
-      value: Neo_Pillar_02_S_snaps001 (10)
-      objectReference: {fileID: 0}
     - target: {fileID: 4083613769861144, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
       propertyPath: m_LocalPosition.x
       value: -14.939999
@@ -5561,6 +5654,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.0168
       objectReference: {fileID: 0}
+    - target: {fileID: 1768158800978914, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
+      propertyPath: m_Name
+      value: Neo_Pillar_02_S_snaps001 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1768158800978914, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
 --- !u!4 &1276563007 stripped
@@ -5576,10 +5677,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 211276220}
     m_Modifications:
-    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
-      propertyPath: m_Name
-      value: Classic_Wall_snaps001 (14)
-      objectReference: {fileID: 0}
     - target: {fileID: 4657047982645578, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
       propertyPath: m_LocalPosition.x
       value: -14.950001
@@ -5616,6 +5713,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 180.00002
       objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_Name
+      value: Classic_Wall_snaps001 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
 --- !u!4 &1278992947 stripped
@@ -5634,6 +5739,10 @@ PrefabInstance:
     - target: {fileID: 1619585040777286, guid: 2dd6a41bf3754ca45a0c700ba7da1771, type: 3}
       propertyPath: m_Name
       value: Classic_Wall_Corner_snaps001 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619585040777286, guid: 2dd6a41bf3754ca45a0c700ba7da1771, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4973419872040736, guid: 2dd6a41bf3754ca45a0c700ba7da1771, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5686,10 +5795,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 211276220}
     m_Modifications:
-    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
-      propertyPath: m_Name
-      value: Classic_Wall_snaps001 (22)
-      objectReference: {fileID: 0}
     - target: {fileID: 4657047982645578, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.84
@@ -5730,6 +5835,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.0375
       objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_Name
+      value: Classic_Wall_snaps001 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
 --- !u!4 &1310365447 stripped
@@ -5748,6 +5861,10 @@ PrefabInstance:
     - target: {fileID: 1241157690624376, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
       propertyPath: m_Name
       value: Classic_Floor_01_snaps001 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1241157690624376, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4516215191552552, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5800,10 +5917,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 211276220}
     m_Modifications:
-    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
-      propertyPath: m_Name
-      value: Classic_Wall_snaps001 (24)
-      objectReference: {fileID: 0}
     - target: {fileID: 4657047982645578, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.940006
@@ -5839,6 +5952,14 @@ PrefabInstance:
     - target: {fileID: 4657047982645578, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_Name
+      value: Classic_Wall_snaps001 (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
@@ -5924,10 +6045,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 211276220}
     m_Modifications:
-    - target: {fileID: 1768158800978914, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
-      propertyPath: m_Name
-      value: Neo_Pillar_02_S_snaps001 (13)
-      objectReference: {fileID: 0}
     - target: {fileID: 4083613769861144, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.740717
@@ -5968,6 +6085,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 179.98601
       objectReference: {fileID: 0}
+    - target: {fileID: 1768158800978914, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
+      propertyPath: m_Name
+      value: Neo_Pillar_02_S_snaps001 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1768158800978914, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
 --- !u!4 &1371955257 stripped
@@ -5986,6 +6111,10 @@ PrefabInstance:
     - target: {fileID: 1197108000201912, guid: a9a6af830b7d63749a8d69dc96895156, type: 3}
       propertyPath: m_Name
       value: Classic_Floor_02_snaps001 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1197108000201912, guid: a9a6af830b7d63749a8d69dc96895156, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4254068895072566, guid: a9a6af830b7d63749a8d69dc96895156, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6050,6 +6179,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Classic_Floor_01_snaps001 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1241157690624376, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4516215191552552, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 11.781481
@@ -6101,10 +6234,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 211276220}
     m_Modifications:
-    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
-      propertyPath: m_Name
-      value: Classic_Wall_snaps001 (9)
-      objectReference: {fileID: 0}
     - target: {fileID: 4657047982645578, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.999999
@@ -6140,6 +6269,14 @@ PrefabInstance:
     - target: {fileID: 4657047982645578, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 180.00002
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_Name
+      value: Classic_Wall_snaps001 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
@@ -6214,10 +6351,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1652624227}
     m_Modifications:
-    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
-      propertyPath: m_Name
-      value: Classic_Wall_snaps001 (7)
-      objectReference: {fileID: 0}
     - target: {fileID: 4657047982645578, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
       propertyPath: m_LocalPosition.x
       value: -41.01
@@ -6254,6 +6387,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_Name
+      value: Classic_Wall_snaps001 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
 --- !u!4 &1448059811 stripped
@@ -6262,7 +6403,7 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1448059810}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1483350547
+--- !u!114 &1470602344
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6272,18 +6413,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
-  m_Name: Enemy_1 - 2 FSM
+  m_Name: Enemy_1 - 4 FSM
   m_EditorClassIdentifier: 
-  _serializedGraph: '{"version":2.85,"type":"NodeCanvas.StateMachines.FSM","translation":{"x":-5016.0,"y":-4759.0},"nodes":[{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"result":{"_name":""},"_targetMethod":{"_baseInfo":"EnemyController|ScanShotsFired|System.Boolean","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedFunction`1[[System.Boolean,
-    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5340.0,"y":4995.0},"_name":"Idle","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"2"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5700.0,"y":5100.0},"_name":"Pursue","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"13"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"_targetMethod":{"_baseInfo":"EnemyController|FireAtTarget|System.Void","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedAction"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5085.0,"y":5190.0},"_name":"Attack","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"20"},{"_position":{"x":5520.0,"y":4830.0},"$type":"NodeCanvas.StateMachines.AnyState","$id":"30"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"actions":[{"valueA":{"_type":"System.Enum","_name":"status","_targetVariableID":"889d9622-583c-45b4-95fa-ab2db5591083"},"valueB":{"_type":"EnemyController+state","_value":{"$content":"DEAD","$type":"EnemyController+state"}},"$type":"NodeCanvas.Tasks.Actions.SetEnum"},{"waitTime":{"_value":5.0},"$type":"NodeCanvas.Tasks.Actions.Wait"},{"$type":"NodeCanvas.Tasks.Actions.DestroyGameObject"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5505.0,"y":4905.0},"$type":"NodeCanvas.StateMachines.SuperActionState","$id":"31"}],"connections":[{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+  _serializedGraph: '{"version":2.85,"type":"NodeCanvas.StateMachines.FSM","translation":{"x":-4960.999,"y":-4713.999},"nodes":[{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"result":{"_name":""},"_targetMethod":{"_baseInfo":"EnemyController|ScanShotsFired|System.Boolean","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedFunction`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5340.0,"y":4995.0},"_name":"Idle","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"2"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"_targetMethod":{"_baseInfo":"EnemyController|PursueTarget|System.Void","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedAction"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"result":{"_name":""},"_targetMethod":{"_baseInfo":"EnemyController|IsPathFinished|System.Boolean","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedFunction`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[{"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"foldEnter":true,"foldUpdate":true,"foldExit":true,"_position":{"x":5565.0,"y":5100.0},"_name":"Pursue","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"13"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"_targetMethod":{"_baseInfo":"EnemyController|FireAtTarget|System.Void","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedAction"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5085.0,"y":5190.0},"_name":"Attack","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"28"},{"_conditionList":{"conditions":[{"functionWrapper":{"result":{},"_targetMethod":{"_baseInfo":"EnemyController|IsDead|System.Boolean","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedFunction`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"checkValue":{"_value":true,"$type":"NodeCanvas.Framework.BBParameter`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$type":"NodeCanvas.Tasks.Conditions.CheckFunction"}]},"_actionList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"_targetMethod":{"_baseInfo":"EnemyController|SetDead|System.Void","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedAction"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_position":{"x":5535.0,"y":4905.0},"$type":"NodeCanvas.StateMachines.ConcurrentState"}],"connections":[{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
     UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"28"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"28"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
     UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
     UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"28"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
     UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"30"},"_targetNode":{"$ref":"31"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"28"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
     Blackboard","_variables":{}}}'
   _objectReferences: []
   _deserializationFailed: 0
@@ -6294,10 +6438,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1935741784}
     m_Modifications:
-    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
-      propertyPath: m_Name
-      value: Classic_Wall_snaps001 (14)
-      objectReference: {fileID: 0}
     - target: {fileID: 4657047982645578, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
       propertyPath: m_LocalPosition.x
       value: -21.02
@@ -6334,6 +6474,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_Name
+      value: Classic_Wall_snaps001 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 64755918592368592, guid: aef7c887e1f419b45b3e480ff017b110,
         type: 3}
       propertyPath: m_Convex
@@ -6354,10 +6502,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 211276220}
     m_Modifications:
-    - target: {fileID: 1768158800978914, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
-      propertyPath: m_Name
-      value: Neo_Pillar_02_S_snaps001 (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 4083613769861144, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.899998
@@ -6394,6 +6538,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.0168
       objectReference: {fileID: 0}
+    - target: {fileID: 1768158800978914, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
+      propertyPath: m_Name
+      value: Neo_Pillar_02_S_snaps001 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1768158800978914, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
 --- !u!4 &1570138295 stripped
@@ -6409,10 +6561,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 211276220}
     m_Modifications:
-    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
-      propertyPath: m_Name
-      value: Classic_Wall_snaps001 (12)
-      objectReference: {fileID: 0}
     - target: {fileID: 4657047982645578, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9
@@ -6449,6 +6597,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_Name
+      value: Classic_Wall_snaps001 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
 --- !u!4 &1603695317 stripped
@@ -6467,6 +6623,10 @@ PrefabInstance:
     - target: {fileID: 1197108000201912, guid: a9a6af830b7d63749a8d69dc96895156, type: 3}
       propertyPath: m_Name
       value: Classic_Floor_02_snaps001 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1197108000201912, guid: a9a6af830b7d63749a8d69dc96895156, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4254068895072566, guid: a9a6af830b7d63749a8d69dc96895156, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6527,10 +6687,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 211276220}
     m_Modifications:
-    - target: {fileID: 1768158800978914, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
-      propertyPath: m_Name
-      value: Neo_Pillar_02_S_snaps001 (6)
-      objectReference: {fileID: 0}
     - target: {fileID: 4083613769861144, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6
@@ -6567,6 +6723,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.0168
       objectReference: {fileID: 0}
+    - target: {fileID: 1768158800978914, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
+      propertyPath: m_Name
+      value: Neo_Pillar_02_S_snaps001 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1768158800978914, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
 --- !u!4 &1627645022 stripped
@@ -6589,7 +6753,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1652624227
 Transform:
@@ -6619,10 +6783,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 211276220}
     m_Modifications:
-    - target: {fileID: 1768158800978914, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
-      propertyPath: m_Name
-      value: Neo_Pillar_02_S_snaps001 (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 4083613769861144, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.97
@@ -6659,6 +6819,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.0168
       objectReference: {fileID: 0}
+    - target: {fileID: 1768158800978914, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
+      propertyPath: m_Name
+      value: Neo_Pillar_02_S_snaps001 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1768158800978914, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
 --- !u!4 &1668453472 stripped
@@ -6674,10 +6842,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 211276220}
     m_Modifications:
-    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
-      propertyPath: m_Name
-      value: Classic_Wall_snaps001 (20)
-      objectReference: {fileID: 0}
     - target: {fileID: 4657047982645578, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
       propertyPath: m_LocalPosition.x
       value: 11.821487
@@ -6714,6 +6878,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 359.986
       objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_Name
+      value: Classic_Wall_snaps001 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
 --- !u!4 &1671544934 stripped
@@ -6722,31 +6894,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1671544933}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1697068332
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
-  m_Name: Enemy_1 - 3 FSM
-  m_EditorClassIdentifier: 
-  _serializedGraph: '{"version":2.85,"type":"NodeCanvas.StateMachines.FSM","translation":{"x":-5016.0,"y":-4759.0},"nodes":[{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"result":{"_name":""},"_targetMethod":{"_baseInfo":"EnemyController|ScanShotsFired|System.Boolean","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedFunction`1[[System.Boolean,
-    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5340.0,"y":4995.0},"_name":"Idle","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"2"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5700.0,"y":5100.0},"_name":"Pursue","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"13"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"_targetMethod":{"_baseInfo":"EnemyController|FireAtTarget|System.Void","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedAction"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5085.0,"y":5190.0},"_name":"Attack","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"20"},{"_position":{"x":5520.0,"y":4830.0},"$type":"NodeCanvas.StateMachines.AnyState","$id":"30"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"actions":[{"valueA":{"_type":"System.Enum","_name":"status","_targetVariableID":"889d9622-583c-45b4-95fa-ab2db5591083"},"valueB":{"_type":"EnemyController+state","_value":{"$content":"DEAD","$type":"EnemyController+state"}},"$type":"NodeCanvas.Tasks.Actions.SetEnum"},{"waitTime":{"_value":5.0},"$type":"NodeCanvas.Tasks.Actions.Wait"},{"$type":"NodeCanvas.Tasks.Actions.DestroyGameObject"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5505.0,"y":4905.0},"$type":"NodeCanvas.StateMachines.SuperActionState","$id":"31"}],"connections":[{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"30"},"_targetNode":{"$ref":"31"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
-    Blackboard","_variables":{}}}'
-  _objectReferences: []
-  _deserializationFailed: 0
 --- !u!1001 &1700890439
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6882,6 +7029,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Classic_Wall_Corner_snaps001 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1619585040777286, guid: 2dd6a41bf3754ca45a0c700ba7da1771, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4973419872040736, guid: 2dd6a41bf3754ca45a0c700ba7da1771, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.7400007
@@ -6933,10 +7084,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 211276220}
     m_Modifications:
-    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
-      propertyPath: m_Name
-      value: Classic_Wall_snaps001 (18)
-      objectReference: {fileID: 0}
     - target: {fileID: 4657047982645578, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.13
@@ -6972,6 +7119,14 @@ PrefabInstance:
     - target: {fileID: 4657047982645578, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_Name
+      value: Classic_Wall_snaps001 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
@@ -7026,6 +7181,10 @@ PrefabInstance:
     - target: {fileID: 1619585040777286, guid: 2dd6a41bf3754ca45a0c700ba7da1771, type: 3}
       propertyPath: m_Name
       value: Classic_Wall_Corner_snaps001 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619585040777286, guid: 2dd6a41bf3754ca45a0c700ba7da1771, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4973419872040736, guid: 2dd6a41bf3754ca45a0c700ba7da1771, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7082,6 +7241,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Classic_Floor_01_snaps001 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 1241157690624376, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4516215191552552, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.9
@@ -7132,6 +7295,10 @@ PrefabInstance:
     - target: {fileID: 1197108000201912, guid: a9a6af830b7d63749a8d69dc96895156, type: 3}
       propertyPath: m_Name
       value: Classic_Floor_02_snaps001 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1197108000201912, guid: a9a6af830b7d63749a8d69dc96895156, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4254068895072566, guid: a9a6af830b7d63749a8d69dc96895156, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7192,10 +7359,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 211276220}
     m_Modifications:
-    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
-      propertyPath: m_Name
-      value: Classic_Wall_snaps001 (25)
-      objectReference: {fileID: 0}
     - target: {fileID: 4657047982645578, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.13999939
@@ -7231,6 +7394,14 @@ PrefabInstance:
     - target: {fileID: 4657047982645578, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_Name
+      value: Classic_Wall_snaps001 (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
@@ -7318,6 +7489,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Classic_Wall_Corner_snaps001 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1619585040777286, guid: 2dd6a41bf3754ca45a0c700ba7da1771, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4973419872040736, guid: 2dd6a41bf3754ca45a0c700ba7da1771, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.960003
@@ -7373,6 +7548,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Classic_Floor_01_snaps001 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 1241157690624376, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4516215191552552, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.91
@@ -7424,6 +7603,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Classic_Floor_01_snaps001 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 1241157690624376, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4516215191552552, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.91
@@ -7471,10 +7654,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1652624227}
     m_Modifications:
-    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
-      propertyPath: m_Name
-      value: Classic_Wall_snaps001 (11)
-      objectReference: {fileID: 0}
     - target: {fileID: 4657047982645578, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
       propertyPath: m_LocalPosition.x
       value: -47.04
@@ -7510,6 +7689,14 @@ PrefabInstance:
     - target: {fileID: 4657047982645578, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_Name
+      value: Classic_Wall_snaps001 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
@@ -7610,31 +7797,6 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1895260191
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
-  m_Name: Enemy_1 - 1 FSM
-  m_EditorClassIdentifier: 
-  _serializedGraph: '{"version":2.85,"type":"NodeCanvas.StateMachines.FSM","translation":{"x":-5016.0,"y":-4759.0},"nodes":[{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"result":{"_name":""},"_targetMethod":{"_baseInfo":"EnemyController|ScanShotsFired|System.Boolean","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedFunction`1[[System.Boolean,
-    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5340.0,"y":4995.0},"_name":"Idle","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"2"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5700.0,"y":5100.0},"_name":"Pursue","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"13"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"_targetMethod":{"_baseInfo":"EnemyController|FireAtTarget|System.Void","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedAction"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5085.0,"y":5190.0},"_name":"Attack","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"20"},{"_position":{"x":5520.0,"y":4830.0},"$type":"NodeCanvas.StateMachines.AnyState","$id":"30"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"actions":[{"valueA":{"_type":"System.Enum","_name":"status","_targetVariableID":"889d9622-583c-45b4-95fa-ab2db5591083"},"valueB":{"_type":"EnemyController+state","_value":{"$content":"DEAD","$type":"EnemyController+state"}},"$type":"NodeCanvas.Tasks.Actions.SetEnum"},{"waitTime":{"_value":5.0},"$type":"NodeCanvas.Tasks.Actions.Wait"},{"$type":"NodeCanvas.Tasks.Actions.DestroyGameObject"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5505.0,"y":4905.0},"$type":"NodeCanvas.StateMachines.SuperActionState","$id":"31"}],"connections":[{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"30"},"_targetNode":{"$ref":"31"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
-    Blackboard","_variables":{}}}'
-  _objectReferences: []
-  _deserializationFailed: 0
 --- !u!1001 &1910701697
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7642,10 +7804,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 211276220}
     m_Modifications:
-    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
-      propertyPath: m_Name
-      value: Classic_Wall_snaps001 (17)
-      objectReference: {fileID: 0}
     - target: {fileID: 4657047982645578, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.1000004
@@ -7681,6 +7839,14 @@ PrefabInstance:
     - target: {fileID: 4657047982645578, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_Name
+      value: Classic_Wall_snaps001 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
@@ -7770,7 +7936,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1935741784
 Transform:
@@ -7817,10 +7983,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 211276220}
     m_Modifications:
-    - target: {fileID: 1768158800978914, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
-      propertyPath: m_Name
-      value: Neo_Pillar_02_S_snaps001 (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 4083613769861144, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.9
@@ -7857,6 +8019,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.0168
       objectReference: {fileID: 0}
+    - target: {fileID: 1768158800978914, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
+      propertyPath: m_Name
+      value: Neo_Pillar_02_S_snaps001 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1768158800978914, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
 --- !u!4 &1943800978 stripped
@@ -7875,6 +8045,10 @@ PrefabInstance:
     - target: {fileID: 1241157690624376, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
       propertyPath: m_Name
       value: Classic_Floor_01_snaps001 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1241157690624376, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4516215191552552, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7927,6 +8101,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Classic_Floor_01_snaps001 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1241157690624376, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4516215191552552, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.91
@@ -7977,6 +8155,10 @@ PrefabInstance:
     - target: {fileID: 1197108000201912, guid: a9a6af830b7d63749a8d69dc96895156, type: 3}
       propertyPath: m_Name
       value: Classic_Floor_02_snaps001 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1197108000201912, guid: a9a6af830b7d63749a8d69dc96895156, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4254068895072566, guid: a9a6af830b7d63749a8d69dc96895156, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8037,10 +8219,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 211276220}
     m_Modifications:
-    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
-      propertyPath: m_Name
-      value: Classic_Wall_snaps001 (11)
-      objectReference: {fileID: 0}
     - target: {fileID: 4657047982645578, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
       propertyPath: m_LocalPosition.x
       value: -14.950001
@@ -8077,6 +8255,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 180.00002
       objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_Name
+      value: Classic_Wall_snaps001 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153918397919294, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef7c887e1f419b45b3e480ff017b110, type: 3}
 --- !u!4 &1998829119 stripped
@@ -8098,10 +8284,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 211276220}
     m_Modifications:
-    - target: {fileID: 1768158800978914, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
-      propertyPath: m_Name
-      value: Neo_Pillar_02_S_snaps001 (9)
-      objectReference: {fileID: 0}
     - target: {fileID: 4083613769861144, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
       propertyPath: m_LocalPosition.x
       value: -14.94
@@ -8137,6 +8319,14 @@ PrefabInstance:
     - target: {fileID: 4083613769861144, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
       propertyPath: m_LocalScale.y
       value: 1.0168
+      objectReference: {fileID: 0}
+    - target: {fileID: 1768158800978914, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
+      propertyPath: m_Name
+      value: Neo_Pillar_02_S_snaps001 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1768158800978914, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21b6cde9dbed3ae40a6a352e6c11be55, type: 3}
@@ -8213,21 +8403,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1483336464600108540, guid: 1bbf7220a167dc04783274e17ed9a4ff,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1483336464600108540, guid: 1bbf7220a167dc04783274e17ed9a4ff,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1483336464600108540, guid: 1bbf7220a167dc04783274e17ed9a4ff,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.1
-      objectReference: {fileID: 0}
     - target: {fileID: 1483336464267598829, guid: 1bbf7220a167dc04783274e17ed9a4ff,
         type: 3}
       propertyPath: startingPosition.x
@@ -8252,7 +8427,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _graph
       value: 
-      objectReference: {fileID: 106362167}
+      objectReference: {fileID: 454158274}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bbf7220a167dc04783274e17ed9a4ff, type: 3}
 --- !u!1001 &2132564977
@@ -8265,6 +8440,10 @@ PrefabInstance:
     - target: {fileID: 1241157690624376, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
       propertyPath: m_Name
       value: Classic_Floor_01_snaps001 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1241157690624376, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4516215191552552, guid: d70a27546822c004b81f0b6ce1dda5aa, type: 3}
       propertyPath: m_LocalPosition.x
