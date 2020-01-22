@@ -85,10 +85,12 @@ public class GhostMovement : MonoBehaviour
         playerMovement.actionsListA.Clear();
         playerMovement.actionsListS.Clear();
         playerMovement.actionsListD.Clear();
+        playerMovement.actionsListShoot.Clear();
         playerMovement.prevActionsListW.Clear();
         playerMovement.prevActionsListA.Clear();
         playerMovement.prevActionsListS.Clear();
         playerMovement.prevActionsListD.Clear();
+        playerMovement.prevActionsListShoot.Clear();
     }
 
     // Update is called once per frame
@@ -98,8 +100,8 @@ public class GhostMovement : MonoBehaviour
         if (nResets <= limitResets && Input.GetKeyDown(KeyCode.Space))
         {
             transform.position = initialPos;
-            indexW = indexA = indexS = indexD = 0;
-            timeLeftW = timeLeftA = timeLeftS = timeLeftD = 0f;
+            indexW = indexA = indexS = indexD = indexShoot = 0;
+            timeLeftW = timeLeftA = timeLeftS = timeLeftD = timeLeftShoot = 0f;
         }
 
         MoveGhostPlayer();
@@ -112,7 +114,6 @@ public class GhostMovement : MonoBehaviour
             MoveForward();
         if (moveBackwards)
             MoveBackwards();
-
     }
 
     void MoveGhostPlayer()
@@ -159,7 +160,6 @@ public class GhostMovement : MonoBehaviour
             }
         }
 
-
         if (indexS < actionsListS.Count)
         {
             if (timeLeftS == 0)
@@ -202,13 +202,13 @@ public class GhostMovement : MonoBehaviour
             }
         }
 
-
         if (indexShoot < actionsListShoot.Count)
         {
             if (timeLeftShoot == 0)
                 timeLeftShoot = actionsListShoot[indexShoot].timePressed;
 
             timeLeftShoot -= Time.deltaTime;
+
             if (timeLeftShoot > 0)
             {
                 if (actionsListShoot[indexShoot].shoot && !shoot)
@@ -218,9 +218,9 @@ public class GhostMovement : MonoBehaviour
                     shoot = true;
                 }
             }
+
             else
             {
-                Debug.Log("else");
                 shoot = false;
                 indexShoot++;
                 timeLeftShoot = 0;
