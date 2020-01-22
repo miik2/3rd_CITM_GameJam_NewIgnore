@@ -326,38 +326,6 @@ public class PlayerController : MonoBehaviour
                 timerD = Time.time - lastTimerD;
             }
 
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                nResets++;
-
-                if (nResets <= limitResets)
-                {
-                    transform.position = startingPosition;
-
-                    playerActions.isMoving = false;
-                    actionsListW.Add(playerActions);
-                    actionsListA.Add(playerActions);
-                    actionsListS.Add(playerActions);
-                    actionsListD.Add(playerActions);
-
-                    prevActionsListW = actionsListW;
-                    prevActionsListA = actionsListA;
-                    prevActionsListS = actionsListS;
-                    prevActionsListD = actionsListD;
-                    prevActionsListShoot = actionsListShoot;
-
-                    totalTime = Time.time;
-
-                    GameObject ghost;
-                    ghost = Instantiate(gameObject, startingPosition, startingRotation);
-                    ghost.AddComponent<GhostMovement>();
-                    PlayerController move = ghost.GetComponent<PlayerController>();
-                    move.enabled = false;
-
-                    resetTime.Add(Time.time);
-                }
-            }
-
             if (Input.GetMouseButtonUp(0))
             {
                 timerShoot = Time.time - lastTimerShoot;
@@ -433,16 +401,6 @@ public class PlayerController : MonoBehaviour
 
     private void LateUpdate()
     {
-        //Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        //mousePos.y = 0;
-        //Debug.Log(mousePos);
-
-        //chest.LookAt(target);
-        //chest.rotation *= Quaternion.Euler(chestOffset);
-
-        // hips.LookAt(CalculateForwardTransform());        
-        // hips.rotation *= Quaternion.Euler(hipsOffset);
-
         Ray mouseRay = Camera.main.ScreenPointToRay(Input.mousePosition);
         float midPoint = (transform.position - Camera.main.transform.position).magnitude;
 
@@ -486,6 +444,32 @@ public class PlayerController : MonoBehaviour
         low_pass_filter.cutoffFrequency = 22000;
 
         // Clone code
+        nResets++;
+
+        if (nResets <= limitResets)
+        {
+            playerActions.isMoving = false;
+            actionsListW.Add(playerActions);
+            actionsListA.Add(playerActions);
+            actionsListS.Add(playerActions);
+            actionsListD.Add(playerActions);
+
+            prevActionsListW = actionsListW;
+            prevActionsListA = actionsListA;
+            prevActionsListS = actionsListS;
+            prevActionsListD = actionsListD;
+            prevActionsListShoot = actionsListShoot;
+
+            totalTime = Time.time;
+
+            GameObject ghost;
+            ghost = Instantiate(gameObject, startingPosition, startingRotation);
+            ghost.AddComponent<GhostMovement>();
+            PlayerController move = ghost.GetComponent<PlayerController>();
+            move.enabled = false;
+
+            resetTime.Add(Time.time);
+        }
     }
 
 }
