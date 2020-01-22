@@ -23,9 +23,6 @@ public class EnemyController : MonoBehaviour
     private Animator animator;
     public NavMeshAgent agent;
 
-    public float bullet_time_limit = 0.1f;
-    private float bullet_started_at = 0.0f;
-
     private NodeCanvas.StateMachines.FSMOwner fsm;
 
     void Start()
@@ -85,21 +82,14 @@ public class EnemyController : MonoBehaviour
         if (target != null)
             return target.GetComponent<PlayerController>().IsDead();
         else
-        {
-            animator.SetBool("Shooting", false);
             return true;
-        }
     }
 
     public void FireAtTarget()
     {
         //Shot
-        if (Time.time > bullet_started_at)
-        {
-            rifle.GetComponent<SpawnBullet>().Shoot(player.transform.position);
-            animator.SetBool("Shooting", true);
-            bullet_started_at = Time.time + bullet_time_limit;
-        }
+        //transform.Rotate(Vector3.up, );
+        rifle.GetComponent<SpawnBullet>().Shoot(player.transform.position);
 
         if (IsTargetDead())
             if (!ScanForPlayers())
@@ -144,11 +134,13 @@ public class EnemyController : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "PlayerBullet")
+        if (other.tag == "Boundary")
         {
-            Destroy(other.gameObject);
-            health -= player.damage;
+            return;
         }
+
+        Destroy(other.gameObject);
+        health -= player.damage;
     }
 
     public void ResetEnemy()
