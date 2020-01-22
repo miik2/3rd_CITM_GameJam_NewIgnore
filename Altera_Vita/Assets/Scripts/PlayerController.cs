@@ -82,6 +82,9 @@ public class PlayerController : MonoBehaviour
     public int nResets = 0;
     public int limitResets = 5;
 
+    public AudioSource reload_sound;
+    public AudioSource empty_clip_sound;
+
     private AudioLowPassFilter low_pass_filter;
 
     void Start()
@@ -391,15 +394,17 @@ public class PlayerController : MonoBehaviour
 
                 gun.GetComponent<SpawnBullet>().Shoot();
             }
-            else
+            else if (Input.GetMouseButtonDown(0))
             {
                 //Maybe play empty gun cocking here since we have no bullets left
+                empty_clip_sound.Play();
             }
 
             // reload!
             if (Input.GetKeyDown(KeyCode.R)) 
             {
                 clip_ammo = max_clip_ammo;
+                reload_sound.Play();
             }
         }
     }
