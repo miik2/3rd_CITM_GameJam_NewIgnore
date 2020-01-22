@@ -26,6 +26,7 @@ public class PlayerController : MonoBehaviour
     private Transform hips;
     private float Input_X;
     private float Input_Z;
+    private AudioLowPassFilter low_pass_filter;
 
     void Start()
     {
@@ -34,6 +35,8 @@ public class PlayerController : MonoBehaviour
         hips = animator.GetBoneTransform(HumanBodyBones.Hips);
         health = maxHealth;
         clip_ammo = max_clip_ammo;
+        low_pass_filter = GameObject.Find("Audio_Test").GetComponent<AudioLowPassFilter>();
+        low_pass_filter.cutoffFrequency = 22000;
     }
 
     void Update()
@@ -43,6 +46,7 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("IsDead", true);
             lastDeathTime = Time.time;
             mustRespawn = true;
+            low_pass_filter.cutoffFrequency = 300;
         }
 
         // Respawn in case it died
@@ -127,6 +131,7 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("Input_X", 0.0f);
         animator.SetFloat("Input_Z", 0.0f);
         // Clone code
+        low_pass_filter.cutoffFrequency = 22000;
     }
 
 }
