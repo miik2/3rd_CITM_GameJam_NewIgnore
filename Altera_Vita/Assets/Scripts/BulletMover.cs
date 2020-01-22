@@ -1,14 +1,24 @@
 ﻿using UnityEngine;
 
+public enum BulletType
+{
+    PLAYER = 0,
+    ENEMY,
+};
+
 public class BulletMover : MonoBehaviour
 {
+  
     public float speed;
+    public BulletType owner;
 
     Vector3 direction;
 
     public Vector3 target;
 
     bool calculatedDirection = false;
+
+    private SphereCollider col;
 
     private void Awake()
     {
@@ -19,6 +29,7 @@ public class BulletMover : MonoBehaviour
         destination.y = transform.position.y;
 
         direction = (destination - transform.position).normalized;
+        col = GetComponent<SphereCollider>();
     }
 
     void Update()
@@ -35,5 +46,20 @@ public class BulletMover : MonoBehaviour
         if (calculatedDirection)
             transform.position += direction;
 
+    }
+
+    private void OnTriggerEnter(Collider collision)
+    {
+        if (owner == BulletType.PLAYER)
+        if(!collision.transform.parent.CompareTag("Player"))
+        {
+            Destroy(this);
+        }
+
+        if(owner == BulletType.ENEMY)
+        if (!collision.transform.parent.CompareTag("Enemy"))
+        {
+            Destroy(this);
+        }
     }
 }
