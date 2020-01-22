@@ -80,8 +80,6 @@ public class PlayerController : MonoBehaviour
     public int nResets = 0;
     public int limitResets = 5;
 
-    private float Input_X;
-    private float Input_Z;
     private AudioLowPassFilter low_pass_filter;
 
     void Start()
