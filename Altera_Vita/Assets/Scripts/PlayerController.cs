@@ -109,7 +109,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {    
-        if (IsDead() || Input.GetKey(KeyCode.F))
+        if (IsDead() && !mustRespawn)
         {
             animator.SetBool("IsDead", true);
             lastDeathTime = Time.time;
@@ -124,7 +124,7 @@ public class PlayerController : MonoBehaviour
             mustRespawn = false;
         }
 
-        if (Time.time >= lastDeathTime + resetLevelWait)
+        if (!mustRespawn)
         {       
             // Player movement
             Input_X = Input.GetAxis("Vertical");
@@ -301,29 +301,29 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKey(KeyCode.W))
             {
                 transform.position += new Vector3(0, 0, speed * Time.deltaTime);
-                Input_Z = Input.GetAxis("Vertical");
-                animator.SetFloat("Input_Z", Input_Z);
+                Input_X = Input.GetAxis("Vertical");
+                animator.SetFloat("Input_X", Input_X);
                 timerW = Time.time - lastTimerW;
             }
             if (Input.GetKey(KeyCode.S))
             {
                 transform.position += new Vector3(0, 0, -speed * Time.deltaTime);
-                Input_Z = Input.GetAxis("Vertical");
-                animator.SetFloat("Input_Z", Input_Z);
+                Input_X = Input.GetAxis("Vertical");
+                animator.SetFloat("Input_X", Input_X);
                 timerS = Time.time - lastTimerS;
             }
             if (Input.GetKey(KeyCode.A))
             {
                 transform.position += new Vector3(-speed * Time.deltaTime, 0, 0);
-                Input_X = Input.GetAxis("Horizontal");
-                animator.SetFloat("Input_X", Input_X);
+                Input_Z = Input.GetAxis("Horizontal");
+                animator.SetFloat("Input_Z", Input_Z);
                 timerA = Time.time - lastTimerA;
             }
             if (Input.GetKey(KeyCode.D))
             {
                 transform.position += new Vector3(speed * Time.deltaTime, 0, 0);
-                Input_X = Input.GetAxis("Horizontal");
-                animator.SetFloat("Input_X", Input_X);
+                Input_Z = Input.GetAxis("Horizontal");
+                animator.SetFloat("Input_Z", Input_Z);
                 timerD = Time.time - lastTimerD;
             }
 
@@ -452,6 +452,15 @@ public class PlayerController : MonoBehaviour
 
         chest.LookAt(destination);
 
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "EnemyBullet")
+        {
+            Destroy(other.gameObject);
+            health -= 100;
+        }
     }
 
     public bool IsDead()

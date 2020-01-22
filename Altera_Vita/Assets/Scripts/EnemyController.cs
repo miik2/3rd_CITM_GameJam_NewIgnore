@@ -191,13 +191,11 @@ public class EnemyController : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Boundary")
+        if (other.tag == "PlayerBullet")
         {
-            return;
+            Destroy(other.gameObject);
+            health -= player.damage;
         }
-
-        Destroy(other.gameObject);
-        health -= player.damage;
     }
 
     public void ResetEnemy()
