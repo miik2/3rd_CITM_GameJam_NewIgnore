@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public enum KEY_PRESSED { W, A, S, D };
 
@@ -84,9 +85,6 @@ public class PlayerController : MonoBehaviour
     [HideInInspector]
     public int nResets = 0;
     public int limitResets = 5;
-
-    public AudioSource reload_sound;
-    public AudioSource empty_clip_sound;
 
     private AudioLowPassFilter low_pass_filter;
 
@@ -406,30 +404,41 @@ public class PlayerController : MonoBehaviour
 
                 gun.GetComponent<SpawnBullet>().Shoot(Vector3.zero);
             }
-            else if (Input.GetMouseButtonDown(0))
+            else
             {
                 //Maybe play empty gun cocking here since we have no bullets left
-                empty_clip_sound.Play();
             }
 
             // reload!
             if (Input.GetKeyDown(KeyCode.R)) 
             {
                 StartCoroutine(Reloadinger());
-                reload_sound.Play();
             }
         }
     }
 
     IEnumerator Reloadinger()
     {
-        //reloader.ReloadAnim();
+        GameObject.FindGameObjectWithTag("reload").GetComponent<Text>().enabled = true;
+        reloader.ReloadAnim();
         yield return new WaitForSeconds(1.5f);
         clip_ammo = max_clip_ammo;
+        reloader.EndReloadAnim();
+        GameObject.FindGameObjectWithTag("reload").GetComponent<Text>().enabled = false;
     }
 
     private void LateUpdate()
     {
+        //Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        //mousePos.y = 0;
+        //Debug.Log(mousePos);
+
+        //chest.LookAt(target);
+        //chest.rotation *= Quaternion.Euler(chestOffset);
+
+        // hips.LookAt(CalculateForwardTransform());        
+        // hips.rotation *= Quaternion.Euler(hipsOffset);
+
         Ray mouseRay = Camera.main.ScreenPointToRay(Input.mousePosition);
         float midPoint = (transform.position - Camera.main.transform.position).magnitude;
 
