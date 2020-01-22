@@ -16,6 +16,7 @@ TagManager:
   - Line1
   - Line2
   - reload
+  - Enemy
   layers:
   - Default
   - TransparentFX
