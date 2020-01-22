@@ -26,9 +26,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Vector3 hipsOffset;
     [SerializeField] private Vector3 chestOffset;
     [SerializeField] public GameObject gun;
-    private bool mustRespawn = false;
 
-    [SerializeField] private GameObject gun;
     public bool mustRespawn = false;
     public float lastDeathTime = 0.0f;
     public float respawnWait = 3.0f;
