@@ -1,16 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemyController : MonoBehaviour
 {
-    public enum state
-    {
-        IDLE,
-        ATTACKING,
-        SEEKING,
-        DEAD
-    } public state status = state.IDLE;
     public int maxHealth = 100;
     public int health;
     public Vector3 startingPosition = Vector3.zero;
@@ -27,11 +21,15 @@ public class EnemyController : MonoBehaviour
 
     private PlayerController player;
     private Animator animator;
+    public NavMeshAgent agent;
+
+    private NodeCanvas.StateMachines.FSMOwner fsm;
 
     void Start()
     {
         percieve = GetComponent<AIPercieve>();
         perception_manager = GetComponent<AIPerceptionManager>();
+        fsm = GetComponent<NodeCanvas.StateMachines.FSMOwner>();
 
         player = GameObject.Find("Player").GetComponent<PlayerController>();
         animator = gameObject.GetComponent<Animator>();
@@ -41,7 +39,9 @@ public class EnemyController : MonoBehaviour
         shotCollector = gameController.GetComponent<Shot_Collector>();
         startingPosition = transform.position;
         startingRotation = transform.rotation;
-}
+
+        agent = GetComponent<NavMeshAgent>();
+    }
 
     public bool ScanForPlayers()
     {
@@ -53,7 +53,7 @@ public class EnemyController : MonoBehaviour
                 return true;
             }
         }
-            
+
         return false;
     }
 
@@ -69,9 +69,7 @@ public class EnemyController : MonoBehaviour
 
                 if (LayerMask.LayerToName(shot_it.author.layer) == "Player" && Vector3.Distance(shot_pos, gameObject.transform.position) < percieve.hear_distance)
                 {
-                    if (Vector3.Distance(shot_pos, gameObject.transform.position) < percieve.hear_distance)
-                        last_location = shot_pos;
-
+                    last_location = shot_pos;
                     return true;
                 }
             }
@@ -90,6 +88,7 @@ public class EnemyController : MonoBehaviour
     public void FireAtTarget()
     {
         //Shot
+        //transform.Rotate(Vector3.up, );
         rifle.GetComponent<SpawnBullet>().Shoot(player.transform.position);
 
         if (IsTargetDead())
@@ -97,91 +96,35 @@ public class EnemyController : MonoBehaviour
                 target = null;
     }
 
-    //if (sight)
-    //    {
-    //        foreach (GameObject go in detected)
-    //            if (LayerMask.LayerToName(go.layer) == "Enemies")
-    //                if (go.GetComponent<EnemyController>().status == EnemyController.state.DEAD)
-    //                {
-    //                    manager.shotHeard = true;
-    //                    manager.last_location = GameObject.Find("Player").;
-    //                }
-    //    }
-    //    else if (hearing)
-    //    {
-    //        foreach (Shot_Collector.Shot shot_it in shotCollector.shotLocations)
-    //            if (Vector3.Distance(gameObject.transform.position, shot_it.author.transform.position) < hear_distance)
-    //            {
-    //                manager.shotHeard = true;
-    //                manager.location = shot_it.author.transform.position;
-    //            }
-    //    }
+    public void PursueTarget()
+    {
+        if (agent.pathStatus == NavMeshPathStatus.PathComplete || agent.pathStatus == NavMeshPathStatus.PathInvalid)
+            agent.SetDestination(last_location);
+    }
 
-    //    //////
+    public bool IsPathFinished()
+    {
+        if (agent.pathStatus == NavMeshPathStatus.PathComplete)
+        {
+            last_location = Vector3.zero;
+            return true;
+        }
+        else if (agent.pathStatus == NavMeshPathStatus.PathInvalid)
+            agent.SetDestination(last_location);
 
-    //    if (LayerMask.LayerToName(ev.target.layer) == "Player") //The only NEW detection event we care about is player
-    //    {
-    //        controller.target = ev.target;
-    //    }
-
-    //    ////////
-    //    ///
-
-    //    if (controller.target == ev.target)
-    //    {
-    //        bool found = false;
-
-    //        foreach (GameObject go in perception.detected)
-    //        {
-    //            if (LayerMask.LayerToName(go.layer) == "Player")    //Attempt to get another player
-    //            {
-    //                controller.target = go;
-    //                found = true;
-    //                break;
-    //            }
-    //        }
-
-    //        if (!found)
-    //            controller.target = null;   //
-    //    }
+        return false;
+    }
 
     void Update()
     {
-        if (IsDead())
-        {
-            animator.SetBool("IsDead", true);
-        }
-        else
-        {
-            IsTargetDead();
-        }
 
+    }
 
-        //if (LayerMask.LayerToName(ev.target.layer) == "Player") //The only NEW detection event we care about is player
-        //{
-        //    controller.target = ev.target;
-        //}
-
-        //////////
-        /////
-
-        //if (controller.target == ev.target)
-        //{
-        //    bool found = false;
-
-        //    foreach (GameObject go in perception.detected)
-        //    {
-        //        if (LayerMask.LayerToName(go.layer) == "Player")    //Attempt to get another player
-        //        {
-        //            controller.target = go;
-        //            found = true;
-        //            break;
-        //        }
-        //    }
-
-        //    if (!found)
-        //        controller.target = null;   //
-        //}
+    public void SetDead()
+    {
+        animator.SetBool("IsDead", true);
+        agent.enabled = false;
+        fsm.enabled = false;
     }
 
     public bool IsDead()
@@ -206,5 +149,12 @@ public class EnemyController : MonoBehaviour
         transform.position = startingPosition;
         transform.rotation = startingRotation;
         animator.SetBool("IsDead", false);
+
+        target = null;
+        last_location = Vector3.zero;
+
+        agent.enabled = true;
+        fsm.enabled = true;
+        fsm.RestartBehaviour();
     }
 }
