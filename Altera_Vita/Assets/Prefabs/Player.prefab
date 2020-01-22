@@ -1129,16 +1129,14 @@ MonoBehaviour:
   mustRespawn: 0
   lastDeathTime: 0
   respawnWait: 3
-  resetLevelWait: 6
   health: 0
-  speed: 2
+  speed: 4
   startingPosition: {x: 0, y: 0, z: 0}
   startingRotation: {x: 0, y: 0, z: 0, w: 1}
   target: {fileID: 0}
   max_clip_ammo: 7
   damage: 10
   reloader: {fileID: 0}
-  ghostAnimator: {fileID: 5591208249432670132}
   animator: {fileID: 0}
   Input_X: 0
   Input_Z: 0

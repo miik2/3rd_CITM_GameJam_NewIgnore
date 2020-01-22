@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SteeringAlign : MonoBehaviour
 {
-    EnemyController controller;
+    public  EnemyController controller;
 
     bool corroutine_active = false;
 
@@ -21,17 +21,20 @@ public class SteeringAlign : MonoBehaviour
 
     void Start()
     {
-        controller = GetComponent<EnemyController>();
+        controller = gameObject.GetComponent<EnemyController>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector3 desired = (controller.target.transform.position - transform.position).normalized;
-
-        if (controller.target != null && Vector3.Angle(transform.forward, desired) > 2.0f)
+        if (controller != null)
         {
-            StartCoroutine("Rotator", desired);
+            Vector3 desired = (controller.target.transform.position - transform.position).normalized;
+
+            if (controller.target != null && Vector3.Angle(transform.forward, desired) > 2.0f)
+            {
+                StartCoroutine("Rotator", desired);
+            }
         }
     }
 }
