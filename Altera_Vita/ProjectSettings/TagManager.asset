@@ -24,10 +24,10 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - Boundary
+  - Obstacles
+  - Targets
   - 
   - 
   - 
