@@ -17,7 +17,9 @@ public class EnemyController : MonoBehaviour
     public Quaternion startingRotation = Quaternion.identity;
 
     public GameObject target = null;
-    public Vector3 last_location = Vector3.negativeInfinity;
+    public Vector3 last_location = Vector3.zero;
+
+    public Shot_Collector shotCollector;
 
     public AIPercieve percieve;
     public AIPerceptionManager perception_manager;
@@ -30,7 +32,9 @@ public class EnemyController : MonoBehaviour
         player = GameObject.Find("Player").GetComponent<PlayerController>();
         animator = gameObject.GetComponent<Animator>();
         health = maxHealth;
-        GameObject.Find("GameController").GetComponent<ManageScene>().enemies.Add(this);
+        GameObject gameController = GameObject.Find("GameController");
+        gameController.GetComponent<ManageScene>().enemies.Add(this);
+        shotCollector = gameController.GetComponent<Shot_Collector>();
     }
 
     public bool ScanForPlayers()
@@ -49,12 +53,16 @@ public class EnemyController : MonoBehaviour
 
     public bool ScanShotsFired()
     {
-        foreach (GameObject go in percieve.detected)
-            if (LayerMask.LayerToName(go.layer) == "Player" && !go.GetComponent<PlayerController>().IsDead())
+        foreach (Shot_Collector.Shot shot_it in shotCollector.shotLocations)
+        {
+            Vector3 shot_pos = shot_it.author.transform.position;
+
+            if (LayerMask.LayerToName(shot_it.author.layer) == "Player" && Vector3.Distance(shot_pos, gameObject.transform.position) < percieve.hear_distance)
             {
-                target = go;
+                last_location = shot_pos;
                 return true;
             }
+        }
 
         return false;
     }
@@ -66,7 +74,7 @@ public class EnemyController : MonoBehaviour
 
     public void FireAtTarget()
     {
-        //Fire at target
+        //Shot
 
         if (IsTargetDead())
             if (!ScanForPlayers())
