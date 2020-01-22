@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
     private Transform chest;
     private Transform hips;
-<<<<<<< HEAD
+
     [HideInInspector]
     public float Input_X;
     [HideInInspector]
@@ -79,11 +79,10 @@ public class PlayerController : MonoBehaviour
     [HideInInspector]
     public int nResets = 0;
     public int limitResets = 5;
-=======
+
     private float Input_X;
     private float Input_Z;
     private AudioLowPassFilter low_pass_filter;
->>>>>>> 5649975d623d51b8e67d1f1a64c20e08db826085
 
     void Start()
     {
@@ -91,13 +90,15 @@ public class PlayerController : MonoBehaviour
         chest = animator.GetBoneTransform(HumanBodyBones.Chest);
         hips = animator.GetBoneTransform(HumanBodyBones.Hips);
         health = maxHealth;
-<<<<<<< HEAD
+
         resetTime.Add(0f);
-=======
         clip_ammo = max_clip_ammo;
         low_pass_filter = GameObject.Find("Audio_Test").GetComponent<AudioLowPassFilter>();
         low_pass_filter.cutoffFrequency = 22000;
->>>>>>> 5649975d623d51b8e67d1f1a64c20e08db826085
+
+        clip_ammo = max_clip_ammo;
+        low_pass_filter = GameObject.Find("Audio_Test").GetComponent<AudioLowPassFilter>();
+        low_pass_filter.cutoffFrequency = 22000;
     }
 
     void Update()
@@ -365,7 +366,6 @@ public class PlayerController : MonoBehaviour
             // Player shoot
             if (Input.GetMouseButtonDown(0) && clip_ammo > 0)
             {
-<<<<<<< HEAD
                 if (actionsListShoot.Count != 0)
                 {
                     idleTimerShoot = Time.time - actionsListShoot[actionsListShoot.Count - 1].totalTime;
@@ -386,9 +386,8 @@ public class PlayerController : MonoBehaviour
 
                 lastTimerShoot = Time.time;
 
-=======
                 clip_ammo--;
->>>>>>> 5649975d623d51b8e67d1f1a64c20e08db826085
+
                 gun.GetComponent<SpawnBullet>().Shoot();
             }
             else

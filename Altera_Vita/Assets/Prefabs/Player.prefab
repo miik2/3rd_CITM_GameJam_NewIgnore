@@ -1131,14 +1131,11 @@ MonoBehaviour:
   startingPosition: {x: 0, y: 0, z: -2}
   startingRotation: {x: 0, y: 0, z: 0, w: 1}
   target: {fileID: 0}
-<<<<<<< HEAD
   totalTime: 0
   ghostTimer: 0
   nResets: 0
   limitResets: 5
-=======
   max_clip_ammo: 7
->>>>>>> 5649975d623d51b8e67d1f1a64c20e08db826085
 --- !u!1 &5591208249425366130
 GameObject:
   m_ObjectHideFlags: 0
@@ -1524,7 +1521,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pistol
       objectReference: {fileID: 0}
-<<<<<<< HEAD
     - target: {fileID: 1250357986450831337, guid: a8c71f9a966251c48a704ad310abedcb,
         type: 3}
       propertyPath: m_Layer
@@ -1570,8 +1566,6 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
-=======
->>>>>>> 5649975d623d51b8e67d1f1a64c20e08db826085
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8c71f9a966251c48a704ad310abedcb, type: 3}
 --- !u!4 &7143384256721535793 stripped
