@@ -560,6 +560,56 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 103195201}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &106362167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
+  m_Name: Enemy_1 - 5 FSM
+  m_EditorClassIdentifier: 
+  _serializedGraph: '{"version":2.85,"type":"NodeCanvas.StateMachines.FSM","translation":{"x":-5016.0,"y":-4759.0},"nodes":[{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"result":{"_name":""},"_targetMethod":{"_baseInfo":"EnemyController|ScanShotsFired|System.Boolean","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedFunction`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5340.0,"y":4995.0},"_name":"Idle","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"2"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5700.0,"y":5100.0},"_name":"Pursue","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"13"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"_targetMethod":{"_baseInfo":"EnemyController|FireAtTarget|System.Void","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedAction"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5085.0,"y":5190.0},"_name":"Attack","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"20"},{"_position":{"x":5520.0,"y":4830.0},"$type":"NodeCanvas.StateMachines.AnyState","$id":"30"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"actions":[{"valueA":{"_type":"System.Enum","_name":"status","_targetVariableID":"889d9622-583c-45b4-95fa-ab2db5591083"},"valueB":{"_type":"EnemyController+state","_value":{"$content":"DEAD","$type":"EnemyController+state"}},"$type":"NodeCanvas.Tasks.Actions.SetEnum"},{"waitTime":{"_value":5.0},"$type":"NodeCanvas.Tasks.Actions.Wait"},{"$type":"NodeCanvas.Tasks.Actions.DestroyGameObject"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5505.0,"y":4905.0},"$type":"NodeCanvas.StateMachines.SuperActionState","$id":"31"}],"connections":[{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"30"},"_targetNode":{"$ref":"31"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
+    Blackboard","_variables":{}}}'
+  _objectReferences: []
+  _deserializationFailed: 0
+--- !u!114 &117758868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
+  m_Name: Enemy_1 - 5 FSM
+  m_EditorClassIdentifier: 
+  _serializedGraph: '{"version":2.85,"type":"NodeCanvas.StateMachines.FSM","translation":{"x":-5016.0,"y":-4759.0},"nodes":[{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"result":{"_name":""},"_targetMethod":{"_baseInfo":"EnemyController|ScanShotsFired|System.Boolean","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedFunction`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5340.0,"y":4995.0},"_name":"Idle","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"2"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5700.0,"y":5100.0},"_name":"Pursue","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"13"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"_targetMethod":{"_baseInfo":"EnemyController|FireAtTarget|System.Void","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedAction"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5085.0,"y":5190.0},"_name":"Attack","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"20"},{"_position":{"x":5520.0,"y":4830.0},"$type":"NodeCanvas.StateMachines.AnyState","$id":"30"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"actions":[{"valueA":{"_type":"System.Enum","_name":"status","_targetVariableID":"889d9622-583c-45b4-95fa-ab2db5591083"},"valueB":{"_type":"EnemyController+state","_value":{"$content":"DEAD","$type":"EnemyController+state"}},"$type":"NodeCanvas.Tasks.Actions.SetEnum"},{"waitTime":{"_value":5.0},"$type":"NodeCanvas.Tasks.Actions.Wait"},{"$type":"NodeCanvas.Tasks.Actions.DestroyGameObject"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5505.0,"y":4905.0},"$type":"NodeCanvas.StateMachines.SuperActionState","$id":"31"}],"connections":[{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"30"},"_targetNode":{"$ref":"31"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
+    Blackboard","_variables":{}}}'
+  _objectReferences: []
+  _deserializationFailed: 0
 --- !u!1001 &130821071
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -981,7 +1031,7 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 215940475}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &233508157
+--- !u!114 &220275049
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -991,7 +1041,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
-  m_Name: Enemy_1 - 3 FSM
+  m_Name: Enemy_1 - 4 FSM
   m_EditorClassIdentifier: 
   _serializedGraph: '{"version":2.85,"type":"NodeCanvas.StateMachines.FSM","translation":{"x":-5016.0,"y":-4759.0},"nodes":[{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"result":{"_name":""},"_targetMethod":{"_baseInfo":"EnemyController|ScanShotsFired|System.Boolean","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedFunction`1[[System.Boolean,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5340.0,"y":4995.0},"_name":"Idle","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"2"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5700.0,"y":5100.0},"_name":"Pursue","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"13"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"_targetMethod":{"_baseInfo":"EnemyController|FireAtTarget|System.Void","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedAction"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5085.0,"y":5190.0},"_name":"Attack","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"20"},{"_position":{"x":5520.0,"y":4830.0},"$type":"NodeCanvas.StateMachines.AnyState","$id":"30"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"actions":[{"valueA":{"_type":"System.Enum","_name":"status","_targetVariableID":"889d9622-583c-45b4-95fa-ab2db5591083"},"valueB":{"_type":"EnemyController+state","_value":{"$content":"DEAD","$type":"EnemyController+state"}},"$type":"NodeCanvas.Tasks.Actions.SetEnum"},{"waitTime":{"_value":5.0},"$type":"NodeCanvas.Tasks.Actions.Wait"},{"$type":"NodeCanvas.Tasks.Actions.DestroyGameObject"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5505.0,"y":4905.0},"$type":"NodeCanvas.StateMachines.SuperActionState","$id":"31"}],"connections":[{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
@@ -1452,7 +1502,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _graph
       value: 
-      objectReference: {fileID: 646001563}
+      objectReference: {fileID: 1895260191}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bbf7220a167dc04783274e17ed9a4ff, type: 3}
 --- !u!1001 &346205566
@@ -1887,7 +1937,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _graph
       value: 
-      objectReference: {fileID: 852775162}
+      objectReference: {fileID: 1483350547}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bbf7220a167dc04783274e17ed9a4ff, type: 3}
 --- !u!1 &438588330
@@ -2682,31 +2732,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 84
   m_CollisionDetection: 0
---- !u!114 &567276346
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
-  m_Name: Enemy_1 - 5 FSM
-  m_EditorClassIdentifier: 
-  _serializedGraph: '{"version":2.85,"type":"NodeCanvas.StateMachines.FSM","translation":{"x":-5016.0,"y":-4759.0},"nodes":[{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"result":{"_name":""},"_targetMethod":{"_baseInfo":"EnemyController|ScanShotsFired|System.Boolean","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedFunction`1[[System.Boolean,
-    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5340.0,"y":4995.0},"_name":"Idle","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"2"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5700.0,"y":5100.0},"_name":"Pursue","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"13"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"_targetMethod":{"_baseInfo":"EnemyController|FireAtTarget|System.Void","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedAction"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5085.0,"y":5190.0},"_name":"Attack","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"20"},{"_position":{"x":5520.0,"y":4830.0},"$type":"NodeCanvas.StateMachines.AnyState","$id":"30"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"actions":[{"valueA":{"_type":"System.Enum","_name":"status","_targetVariableID":"889d9622-583c-45b4-95fa-ab2db5591083"},"valueB":{"_type":"EnemyController+state","_value":{"$content":"DEAD","$type":"EnemyController+state"}},"$type":"NodeCanvas.Tasks.Actions.SetEnum"},{"waitTime":{"_value":5.0},"$type":"NodeCanvas.Tasks.Actions.Wait"},{"$type":"NodeCanvas.Tasks.Actions.DestroyGameObject"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5505.0,"y":4905.0},"$type":"NodeCanvas.StateMachines.SuperActionState","$id":"31"}],"connections":[{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"30"},"_targetNode":{"$ref":"31"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
-    Blackboard","_variables":{}}}'
-  _objectReferences: []
-  _deserializationFailed: 0
 --- !u!1001 &571460459
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3016,31 +3041,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 642490131}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &646001563
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
-  m_Name: Enemy_1 - 1 FSM
-  m_EditorClassIdentifier: 
-  _serializedGraph: '{"version":2.85,"type":"NodeCanvas.StateMachines.FSM","translation":{"x":-5016.0,"y":-4759.0},"nodes":[{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"result":{"_name":""},"_targetMethod":{"_baseInfo":"EnemyController|ScanShotsFired|System.Boolean","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedFunction`1[[System.Boolean,
-    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5340.0,"y":4995.0},"_name":"Idle","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"2"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5700.0,"y":5100.0},"_name":"Pursue","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"13"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"_targetMethod":{"_baseInfo":"EnemyController|FireAtTarget|System.Void","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedAction"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5085.0,"y":5190.0},"_name":"Attack","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"20"},{"_position":{"x":5520.0,"y":4830.0},"$type":"NodeCanvas.StateMachines.AnyState","$id":"30"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"actions":[{"valueA":{"_type":"System.Enum","_name":"status","_targetVariableID":"889d9622-583c-45b4-95fa-ab2db5591083"},"valueB":{"_type":"EnemyController+state","_value":{"$content":"DEAD","$type":"EnemyController+state"}},"$type":"NodeCanvas.Tasks.Actions.SetEnum"},{"waitTime":{"_value":5.0},"$type":"NodeCanvas.Tasks.Actions.Wait"},{"$type":"NodeCanvas.Tasks.Actions.DestroyGameObject"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5505.0,"y":4905.0},"$type":"NodeCanvas.StateMachines.SuperActionState","$id":"31"}],"connections":[{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"30"},"_targetNode":{"$ref":"31"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
-    Blackboard","_variables":{}}}'
-  _objectReferences: []
-  _deserializationFailed: 0
 --- !u!1001 &665598178
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3129,6 +3129,117 @@ Transform:
   m_Father: {fileID: 84974304}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &684863022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
+  m_Name: Enemy_1 - 1 FSM
+  m_EditorClassIdentifier: 
+  _serializedGraph: '{"version":2.85,"type":"NodeCanvas.StateMachines.FSM","translation":{"x":-5016.0,"y":-4759.0},"nodes":[{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"result":{"_name":""},"_targetMethod":{"_baseInfo":"EnemyController|ScanShotsFired|System.Boolean","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedFunction`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5340.0,"y":4995.0},"_name":"Idle","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"2"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5700.0,"y":5100.0},"_name":"Pursue","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"13"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"_targetMethod":{"_baseInfo":"EnemyController|FireAtTarget|System.Void","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedAction"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5085.0,"y":5190.0},"_name":"Attack","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"20"},{"_position":{"x":5520.0,"y":4830.0},"$type":"NodeCanvas.StateMachines.AnyState","$id":"30"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"actions":[{"valueA":{"_type":"System.Enum","_name":"status","_targetVariableID":"889d9622-583c-45b4-95fa-ab2db5591083"},"valueB":{"_type":"EnemyController+state","_value":{"$content":"DEAD","$type":"EnemyController+state"}},"$type":"NodeCanvas.Tasks.Actions.SetEnum"},{"waitTime":{"_value":5.0},"$type":"NodeCanvas.Tasks.Actions.Wait"},{"$type":"NodeCanvas.Tasks.Actions.DestroyGameObject"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5505.0,"y":4905.0},"$type":"NodeCanvas.StateMachines.SuperActionState","$id":"31"}],"connections":[{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"30"},"_targetNode":{"$ref":"31"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
+    Blackboard","_variables":{}}}'
+  _objectReferences: []
+  _deserializationFailed: 0
+--- !u!1 &689232932
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 689232933}
+  - component: {fileID: 689232934}
+  m_Layer: 0
+  m_Name: Cursor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &689232933
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689232932}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: -0.15}
+  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_Children: []
+  m_Father: {fileID: 1444849615}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.15, y: 0}
+  m_SizeDelta: {x: 1, y: 1}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!212 &689232934
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689232932}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 13a371315cfd34c48a312004ec838fd1, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 5.52, y: 5.98}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1001 &701569985
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3455,7 +3566,7 @@ PrefabInstance:
     - target: {fileID: 1685809258232552940, guid: ea67ac2b0e738b244b187f2053855723,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1685809259570670485, guid: ea67ac2b0e738b244b187f2053855723,
         type: 3}
@@ -3801,7 +3912,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _graph
       value: 
-      objectReference: {fileID: 1470629299}
+      objectReference: {fileID: 220275049}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bbf7220a167dc04783274e17ed9a4ff, type: 3}
 --- !u!1001 &819617051
@@ -4191,31 +4302,6 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &852775162
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
-  m_Name: Enemy_1 - 2 FSM
-  m_EditorClassIdentifier: 
-  _serializedGraph: '{"version":2.85,"type":"NodeCanvas.StateMachines.FSM","translation":{"x":-5016.0,"y":-4759.0},"nodes":[{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"result":{"_name":""},"_targetMethod":{"_baseInfo":"EnemyController|ScanShotsFired|System.Boolean","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedFunction`1[[System.Boolean,
-    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5340.0,"y":4995.0},"_name":"Idle","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"2"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5700.0,"y":5100.0},"_name":"Pursue","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"13"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"_targetMethod":{"_baseInfo":"EnemyController|FireAtTarget|System.Void","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedAction"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5085.0,"y":5190.0},"_name":"Attack","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"20"},{"_position":{"x":5520.0,"y":4830.0},"$type":"NodeCanvas.StateMachines.AnyState","$id":"30"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"actions":[{"valueA":{"_type":"System.Enum","_name":"status","_targetVariableID":"889d9622-583c-45b4-95fa-ab2db5591083"},"valueB":{"_type":"EnemyController+state","_value":{"$content":"DEAD","$type":"EnemyController+state"}},"$type":"NodeCanvas.Tasks.Actions.SetEnum"},{"waitTime":{"_value":5.0},"$type":"NodeCanvas.Tasks.Actions.Wait"},{"$type":"NodeCanvas.Tasks.Actions.DestroyGameObject"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5505.0,"y":4905.0},"$type":"NodeCanvas.StateMachines.SuperActionState","$id":"31"}],"connections":[{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"30"},"_targetNode":{"$ref":"31"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
-    Blackboard","_variables":{}}}'
-  _objectReferences: []
-  _deserializationFailed: 0
 --- !u!1001 &895552965
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4267,56 +4353,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 895552965}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &921785682
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
-  m_Name: Enemy_1 - 3 FSM
-  m_EditorClassIdentifier: 
-  _serializedGraph: '{"version":2.85,"type":"NodeCanvas.StateMachines.FSM","translation":{"x":-5016.0,"y":-4759.0},"nodes":[{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"result":{"_name":""},"_targetMethod":{"_baseInfo":"EnemyController|ScanShotsFired|System.Boolean","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedFunction`1[[System.Boolean,
-    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5340.0,"y":4995.0},"_name":"Idle","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"2"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5700.0,"y":5100.0},"_name":"Pursue","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"13"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"_targetMethod":{"_baseInfo":"EnemyController|FireAtTarget|System.Void","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedAction"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5085.0,"y":5190.0},"_name":"Attack","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"20"},{"_position":{"x":5520.0,"y":4830.0},"$type":"NodeCanvas.StateMachines.AnyState","$id":"30"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"actions":[{"valueA":{"_type":"System.Enum","_name":"status","_targetVariableID":"889d9622-583c-45b4-95fa-ab2db5591083"},"valueB":{"_type":"EnemyController+state","_value":{"$content":"DEAD","$type":"EnemyController+state"}},"$type":"NodeCanvas.Tasks.Actions.SetEnum"},{"waitTime":{"_value":5.0},"$type":"NodeCanvas.Tasks.Actions.Wait"},{"$type":"NodeCanvas.Tasks.Actions.DestroyGameObject"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5505.0,"y":4905.0},"$type":"NodeCanvas.StateMachines.SuperActionState","$id":"31"}],"connections":[{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"30"},"_targetNode":{"$ref":"31"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
-    Blackboard","_variables":{}}}'
-  _objectReferences: []
-  _deserializationFailed: 0
---- !u!114 &924322687
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
-  m_Name: Enemy_1 - 2 FSM
-  m_EditorClassIdentifier: 
-  _serializedGraph: '{"version":2.85,"type":"NodeCanvas.StateMachines.FSM","translation":{"x":-5016.0,"y":-4759.0},"nodes":[{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"result":{"_name":""},"_targetMethod":{"_baseInfo":"EnemyController|ScanShotsFired|System.Boolean","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedFunction`1[[System.Boolean,
-    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5340.0,"y":4995.0},"_name":"Idle","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"2"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5700.0,"y":5100.0},"_name":"Pursue","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"13"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"_targetMethod":{"_baseInfo":"EnemyController|FireAtTarget|System.Void","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedAction"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5085.0,"y":5190.0},"_name":"Attack","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"20"},{"_position":{"x":5520.0,"y":4830.0},"$type":"NodeCanvas.StateMachines.AnyState","$id":"30"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"actions":[{"valueA":{"_type":"System.Enum","_name":"status","_targetVariableID":"889d9622-583c-45b4-95fa-ab2db5591083"},"valueB":{"_type":"EnemyController+state","_value":{"$content":"DEAD","$type":"EnemyController+state"}},"$type":"NodeCanvas.Tasks.Actions.SetEnum"},{"waitTime":{"_value":5.0},"$type":"NodeCanvas.Tasks.Actions.Wait"},{"$type":"NodeCanvas.Tasks.Actions.DestroyGameObject"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5505.0,"y":4905.0},"$type":"NodeCanvas.StateMachines.SuperActionState","$id":"31"}],"connections":[{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"30"},"_targetNode":{"$ref":"31"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
-    Blackboard","_variables":{}}}'
-  _objectReferences: []
-  _deserializationFailed: 0
 --- !u!1001 &942586407
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4423,7 +4459,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _graph
       value: 
-      objectReference: {fileID: 233508157}
+      objectReference: {fileID: 1697068332}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bbf7220a167dc04783274e17ed9a4ff, type: 3}
 --- !u!1001 &987296572
@@ -4709,6 +4745,31 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1049794510}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1064232659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
+  m_Name: Enemy_1 - 3 FSM
+  m_EditorClassIdentifier: 
+  _serializedGraph: '{"version":2.85,"type":"NodeCanvas.StateMachines.FSM","translation":{"x":-5016.0,"y":-4759.0},"nodes":[{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"result":{"_name":""},"_targetMethod":{"_baseInfo":"EnemyController|ScanShotsFired|System.Boolean","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedFunction`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5340.0,"y":4995.0},"_name":"Idle","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"2"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5700.0,"y":5100.0},"_name":"Pursue","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"13"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"_targetMethod":{"_baseInfo":"EnemyController|FireAtTarget|System.Void","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedAction"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5085.0,"y":5190.0},"_name":"Attack","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"20"},{"_position":{"x":5520.0,"y":4830.0},"$type":"NodeCanvas.StateMachines.AnyState","$id":"30"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"actions":[{"valueA":{"_type":"System.Enum","_name":"status","_targetVariableID":"889d9622-583c-45b4-95fa-ab2db5591083"},"valueB":{"_type":"EnemyController+state","_value":{"$content":"DEAD","$type":"EnemyController+state"}},"$type":"NodeCanvas.Tasks.Actions.SetEnum"},{"waitTime":{"_value":5.0},"$type":"NodeCanvas.Tasks.Actions.Wait"},{"$type":"NodeCanvas.Tasks.Actions.DestroyGameObject"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5505.0,"y":4905.0},"$type":"NodeCanvas.StateMachines.SuperActionState","$id":"31"}],"connections":[{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"30"},"_targetNode":{"$ref":"31"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
+    Blackboard","_variables":{}}}'
+  _objectReferences: []
+  _deserializationFailed: 0
 --- !u!1001 &1104496720
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4851,6 +4912,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1137117345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
+  m_Name: Enemy_1 - 2 FSM
+  m_EditorClassIdentifier: 
+  _serializedGraph: '{"version":2.85,"type":"NodeCanvas.StateMachines.FSM","translation":{"x":-5016.0,"y":-4759.0},"nodes":[{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"result":{"_name":""},"_targetMethod":{"_baseInfo":"EnemyController|ScanShotsFired|System.Boolean","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedFunction`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5340.0,"y":4995.0},"_name":"Idle","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"2"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5700.0,"y":5100.0},"_name":"Pursue","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"13"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"_targetMethod":{"_baseInfo":"EnemyController|FireAtTarget|System.Void","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedAction"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5085.0,"y":5190.0},"_name":"Attack","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"20"},{"_position":{"x":5520.0,"y":4830.0},"$type":"NodeCanvas.StateMachines.AnyState","$id":"30"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"actions":[{"valueA":{"_type":"System.Enum","_name":"status","_targetVariableID":"889d9622-583c-45b4-95fa-ab2db5591083"},"valueB":{"_type":"EnemyController+state","_value":{"$content":"DEAD","$type":"EnemyController+state"}},"$type":"NodeCanvas.Tasks.Actions.SetEnum"},{"waitTime":{"_value":5.0},"$type":"NodeCanvas.Tasks.Actions.Wait"},{"$type":"NodeCanvas.Tasks.Actions.DestroyGameObject"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5505.0,"y":4905.0},"$type":"NodeCanvas.StateMachines.SuperActionState","$id":"31"}],"connections":[{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"30"},"_targetNode":{"$ref":"31"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
+    Blackboard","_variables":{}}}'
+  _objectReferences: []
+  _deserializationFailed: 0
 --- !u!1001 &1148233165
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5878,31 +5964,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1372253128}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1386877715
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
-  m_Name: Enemy_1 - 1 FSM
-  m_EditorClassIdentifier: 
-  _serializedGraph: '{"version":2.85,"type":"NodeCanvas.StateMachines.FSM","translation":{"x":-5016.0,"y":-4759.0},"nodes":[{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"result":{"_name":""},"_targetMethod":{"_baseInfo":"EnemyController|ScanShotsFired|System.Boolean","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedFunction`1[[System.Boolean,
-    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5340.0,"y":4995.0},"_name":"Idle","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"2"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5700.0,"y":5100.0},"_name":"Pursue","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"13"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"_targetMethod":{"_baseInfo":"EnemyController|FireAtTarget|System.Void","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedAction"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5085.0,"y":5190.0},"_name":"Attack","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"20"},{"_position":{"x":5520.0,"y":4830.0},"$type":"NodeCanvas.StateMachines.AnyState","$id":"30"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"actions":[{"valueA":{"_type":"System.Enum","_name":"status","_targetVariableID":"889d9622-583c-45b4-95fa-ab2db5591083"},"valueB":{"_type":"EnemyController+state","_value":{"$content":"DEAD","$type":"EnemyController+state"}},"$type":"NodeCanvas.Tasks.Actions.SetEnum"},{"waitTime":{"_value":5.0},"$type":"NodeCanvas.Tasks.Actions.Wait"},{"$type":"NodeCanvas.Tasks.Actions.DestroyGameObject"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5505.0,"y":4905.0},"$type":"NodeCanvas.StateMachines.SuperActionState","$id":"31"}],"connections":[{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"30"},"_targetNode":{"$ref":"31"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
-    Blackboard","_variables":{}}}'
-  _objectReferences: []
-  _deserializationFailed: 0
 --- !u!1001 &1394157311
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6013,6 +6074,64 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1402037006}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1444849611
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1444849615}
+  - component: {fileID: 1444849612}
+  - component: {fileID: 1444849614}
+  m_Layer: 0
+  m_Name: MouseCursor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1444849612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444849611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 655cd75983409094e9ba453a5da5865b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!222 &1444849614
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444849611}
+  m_CullTransparentMesh: 0
+--- !u!224 &1444849615
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444849611}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -5.030056}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 689232933}
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 7.661478, y: 0.45476532}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1448059810
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6068,7 +6187,7 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1448059810}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1470629299
+--- !u!114 &1483350547
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6078,7 +6197,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
-  m_Name: Enemy_1 - 4 FSM
+  m_Name: Enemy_1 - 2 FSM
   m_EditorClassIdentifier: 
   _serializedGraph: '{"version":2.85,"type":"NodeCanvas.StateMachines.FSM","translation":{"x":-5016.0,"y":-4759.0},"nodes":[{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"result":{"_name":""},"_targetMethod":{"_baseInfo":"EnemyController|ScanShotsFired|System.Boolean","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedFunction`1[[System.Boolean,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5340.0,"y":4995.0},"_name":"Idle","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"2"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5700.0,"y":5100.0},"_name":"Pursue","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"13"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"_targetMethod":{"_baseInfo":"EnemyController|FireAtTarget|System.Void","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedAction"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5085.0,"y":5190.0},"_name":"Attack","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"20"},{"_position":{"x":5520.0,"y":4830.0},"$type":"NodeCanvas.StateMachines.AnyState","$id":"30"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"actions":[{"valueA":{"_type":"System.Enum","_name":"status","_targetVariableID":"889d9622-583c-45b4-95fa-ab2db5591083"},"valueB":{"_type":"EnemyController+state","_value":{"$content":"DEAD","$type":"EnemyController+state"}},"$type":"NodeCanvas.Tasks.Actions.SetEnum"},{"waitTime":{"_value":5.0},"$type":"NodeCanvas.Tasks.Actions.Wait"},{"$type":"NodeCanvas.Tasks.Actions.DestroyGameObject"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5505.0,"y":4905.0},"$type":"NodeCanvas.StateMachines.SuperActionState","$id":"31"}],"connections":[{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
@@ -6418,6 +6537,31 @@ Transform:
   m_Father: {fileID: 84974304}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1659022789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
+  m_Name: Enemy_1 - 4 FSM
+  m_EditorClassIdentifier: 
+  _serializedGraph: '{"version":2.85,"type":"NodeCanvas.StateMachines.FSM","translation":{"x":-5016.0,"y":-4759.0},"nodes":[{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"result":{"_name":""},"_targetMethod":{"_baseInfo":"EnemyController|ScanShotsFired|System.Boolean","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedFunction`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5340.0,"y":4995.0},"_name":"Idle","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"2"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5700.0,"y":5100.0},"_name":"Pursue","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"13"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"_targetMethod":{"_baseInfo":"EnemyController|FireAtTarget|System.Void","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedAction"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5085.0,"y":5190.0},"_name":"Attack","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"20"},{"_position":{"x":5520.0,"y":4830.0},"$type":"NodeCanvas.StateMachines.AnyState","$id":"30"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"actions":[{"valueA":{"_type":"System.Enum","_name":"status","_targetVariableID":"889d9622-583c-45b4-95fa-ab2db5591083"},"valueB":{"_type":"EnemyController+state","_value":{"$content":"DEAD","$type":"EnemyController+state"}},"$type":"NodeCanvas.Tasks.Actions.SetEnum"},{"waitTime":{"_value":5.0},"$type":"NodeCanvas.Tasks.Actions.Wait"},{"$type":"NodeCanvas.Tasks.Actions.DestroyGameObject"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5505.0,"y":4905.0},"$type":"NodeCanvas.StateMachines.SuperActionState","$id":"31"}],"connections":[{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"30"},"_targetNode":{"$ref":"31"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
+    Blackboard","_variables":{}}}'
+  _objectReferences: []
+  _deserializationFailed: 0
 --- !u!1001 &1668453471
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6528,6 +6672,31 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1671544933}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1697068332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
+  m_Name: Enemy_1 - 3 FSM
+  m_EditorClassIdentifier: 
+  _serializedGraph: '{"version":2.85,"type":"NodeCanvas.StateMachines.FSM","translation":{"x":-5016.0,"y":-4759.0},"nodes":[{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"result":{"_name":""},"_targetMethod":{"_baseInfo":"EnemyController|ScanShotsFired|System.Boolean","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedFunction`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5340.0,"y":4995.0},"_name":"Idle","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"2"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5700.0,"y":5100.0},"_name":"Pursue","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"13"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"_targetMethod":{"_baseInfo":"EnemyController|FireAtTarget|System.Void","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedAction"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5085.0,"y":5190.0},"_name":"Attack","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"20"},{"_position":{"x":5520.0,"y":4830.0},"$type":"NodeCanvas.StateMachines.AnyState","$id":"30"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"actions":[{"valueA":{"_type":"System.Enum","_name":"status","_targetVariableID":"889d9622-583c-45b4-95fa-ab2db5591083"},"valueB":{"_type":"EnemyController+state","_value":{"$content":"DEAD","$type":"EnemyController+state"}},"$type":"NodeCanvas.Tasks.Actions.SetEnum"},{"waitTime":{"_value":5.0},"$type":"NodeCanvas.Tasks.Actions.Wait"},{"$type":"NodeCanvas.Tasks.Actions.DestroyGameObject"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5505.0,"y":4905.0},"$type":"NodeCanvas.StateMachines.SuperActionState","$id":"31"}],"connections":[{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"30"},"_targetNode":{"$ref":"31"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
+    Blackboard","_variables":{}}}'
+  _objectReferences: []
+  _deserializationFailed: 0
 --- !u!1001 &1700890439
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6797,31 +6966,6 @@ Transform:
   m_Father: {fileID: 703053067}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1741917701
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
-  m_Name: Enemy_1 - 4 FSM
-  m_EditorClassIdentifier: 
-  _serializedGraph: '{"version":2.85,"type":"NodeCanvas.StateMachines.FSM","translation":{"x":-5016.0,"y":-4759.0},"nodes":[{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"result":{"_name":""},"_targetMethod":{"_baseInfo":"EnemyController|ScanShotsFired|System.Boolean","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedFunction`1[[System.Boolean,
-    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5340.0,"y":4995.0},"_name":"Idle","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"2"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5700.0,"y":5100.0},"_name":"Pursue","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"13"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"_targetMethod":{"_baseInfo":"EnemyController|FireAtTarget|System.Void","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedAction"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5085.0,"y":5190.0},"_name":"Attack","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"20"},{"_position":{"x":5520.0,"y":4830.0},"$type":"NodeCanvas.StateMachines.AnyState","$id":"30"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"actions":[{"valueA":{"_type":"System.Enum","_name":"status","_targetVariableID":"889d9622-583c-45b4-95fa-ab2db5591083"},"valueB":{"_type":"EnemyController+state","_value":{"$content":"DEAD","$type":"EnemyController+state"}},"$type":"NodeCanvas.Tasks.Actions.SetEnum"},{"waitTime":{"_value":5.0},"$type":"NodeCanvas.Tasks.Actions.Wait"},{"$type":"NodeCanvas.Tasks.Actions.DestroyGameObject"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5505.0,"y":4905.0},"$type":"NodeCanvas.StateMachines.SuperActionState","$id":"31"}],"connections":[{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"30"},"_targetNode":{"$ref":"31"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
-    Blackboard","_variables":{}}}'
-  _objectReferences: []
-  _deserializationFailed: 0
 --- !u!1001 &1751875663
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6877,31 +7021,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1751875663}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1772722133
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
-  m_Name: Enemy_1 - 5 FSM
-  m_EditorClassIdentifier: 
-  _serializedGraph: '{"version":2.85,"type":"NodeCanvas.StateMachines.FSM","translation":{"x":-5016.0,"y":-4759.0},"nodes":[{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"result":{"_name":""},"_targetMethod":{"_baseInfo":"EnemyController|ScanShotsFired|System.Boolean","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedFunction`1[[System.Boolean,
-    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5340.0,"y":4995.0},"_name":"Idle","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"2"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5700.0,"y":5100.0},"_name":"Pursue","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"13"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"_targetMethod":{"_baseInfo":"EnemyController|FireAtTarget|System.Void","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedAction"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5085.0,"y":5190.0},"_name":"Attack","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"20"},{"_position":{"x":5520.0,"y":4830.0},"$type":"NodeCanvas.StateMachines.AnyState","$id":"30"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"actions":[{"valueA":{"_type":"System.Enum","_name":"status","_targetVariableID":"889d9622-583c-45b4-95fa-ab2db5591083"},"valueB":{"_type":"EnemyController+state","_value":{"$content":"DEAD","$type":"EnemyController+state"}},"$type":"NodeCanvas.Tasks.Actions.SetEnum"},{"waitTime":{"_value":5.0},"$type":"NodeCanvas.Tasks.Actions.Wait"},{"$type":"NodeCanvas.Tasks.Actions.DestroyGameObject"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5505.0,"y":4905.0},"$type":"NodeCanvas.StateMachines.SuperActionState","$id":"31"}],"connections":[{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"30"},"_targetNode":{"$ref":"31"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
-    Blackboard","_variables":{}}}'
-  _objectReferences: []
-  _deserializationFailed: 0
 --- !u!1001 &1797720155
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7440,6 +7559,31 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1895260191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
+  m_Name: Enemy_1 - 1 FSM
+  m_EditorClassIdentifier: 
+  _serializedGraph: '{"version":2.85,"type":"NodeCanvas.StateMachines.FSM","translation":{"x":-5016.0,"y":-4759.0},"nodes":[{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"result":{"_name":""},"_targetMethod":{"_baseInfo":"EnemyController|ScanShotsFired|System.Boolean","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedFunction`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5340.0,"y":4995.0},"_name":"Idle","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"2"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5700.0,"y":5100.0},"_name":"Pursue","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"13"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"executionMode":"ActionsRunInParallel","actions":[{"functionWrapper":{"_targetMethod":{"_baseInfo":"EnemyController|FireAtTarget|System.Void","_paramsInfo":""},"$type":"NodeCanvas.Framework.Internal.ReflectedAction"},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5085.0,"y":5190.0},"_name":"Attack","$type":"NodeCanvas.StateMachines.SuperActionState","$id":"20"},{"_position":{"x":5520.0,"y":4830.0},"$type":"NodeCanvas.StateMachines.AnyState","$id":"30"},{"_onEnterList":{"executionMode":"ActionsRunInParallel","actions":[]},"_onUpdateList":{"actions":[{"valueA":{"_type":"System.Enum","_name":"status","_targetVariableID":"889d9622-583c-45b4-95fa-ab2db5591083"},"valueB":{"_type":"EnemyController+state","_value":{"$content":"DEAD","$type":"EnemyController+state"}},"$type":"NodeCanvas.Tasks.Actions.SetEnum"},{"waitTime":{"_value":5.0},"$type":"NodeCanvas.Tasks.Actions.Wait"},{"$type":"NodeCanvas.Tasks.Actions.DestroyGameObject"}]},"_onExitList":{"executionMode":"ActionsRunInParallel","actions":[]},"foldUpdate":true,"_position":{"x":5505.0,"y":4905.0},"$type":"NodeCanvas.StateMachines.SuperActionState","$id":"31"}],"connections":[{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"target","_targetVariableID":"7cad640e-1e63-4723-8a44-2682c0034a53"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"last_location","_targetVariableID":"998ed174-3c47-4d9d-ab4e-76ba4643c03e"},"valueB":{},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.CheckVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"30"},"_targetNode":{"$ref":"31"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
+    Blackboard","_variables":{}}}'
+  _objectReferences: []
+  _deserializationFailed: 0
 --- !u!1001 &1910701697
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8057,7 +8201,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _graph
       value: 
-      objectReference: {fileID: 567276346}
+      objectReference: {fileID: 106362167}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bbf7220a167dc04783274e17ed9a4ff, type: 3}
 --- !u!1001 &2132564977
