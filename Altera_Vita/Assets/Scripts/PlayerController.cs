@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public enum KEY_PRESSED { W, A, S, D };
 
@@ -18,6 +19,7 @@ public struct PlayerShoot
     public float timePressed;
     public float totalTime;
     public bool shoot;
+    public Vector3 direction;
 }
 
 public class PlayerController : MonoBehaviour
@@ -40,6 +42,8 @@ public class PlayerController : MonoBehaviour
     public int max_clip_ammo = 7;
     public int damage = 10;
     private int clip_ammo;
+
+    public Reload reloader;
 
     [HideInInspector]
     public Animator animator;
@@ -82,9 +86,9 @@ public class PlayerController : MonoBehaviour
     public int nResets = 0;
     public int limitResets = 5;
 
-    public AudioSource reload_sound;
-    public AudioSource empty_clip_sound;
-
+    public AudioClip reload_sound;
+    public AudioClip empty_clip_sound;
+    private AudioSource source;
     private AudioLowPassFilter low_pass_filter;
 
     void Start()
@@ -96,17 +100,13 @@ public class PlayerController : MonoBehaviour
 
         resetTime.Add(0f);
         clip_ammo = max_clip_ammo;
-        low_pass_filter = GameObject.Find("Audio_Test").GetComponent<AudioLowPassFilter>();
-        low_pass_filter.cutoffFrequency = 22000;
-
-        clip_ammo = max_clip_ammo;
-        low_pass_filter = GameObject.Find("Audio_Test").GetComponent<AudioLowPassFilter>();
-        low_pass_filter.cutoffFrequency = 22000;
+       // low_pass_filter = GameObject.Find("Audio_Test").GetComponent<AudioLowPassFilter>();
+        //low_pass_filter.cutoffFrequency = 22000;
+        source = gameObject.GetComponent<AudioSource>();
     }
 
     void Update()
     {    
-
         if (IsDead() || Input.GetKey(KeyCode.F))
         {
             animator.SetBool("IsDead", true);
@@ -363,7 +363,14 @@ public class PlayerController : MonoBehaviour
 
                 playerShots.shoot = true;
                 playerShots.timePressed = timerShoot;
-                playerShots.totalTime = Time.time;
+                playerShots.totalTime = Time.time - resetTime[nResets];
+
+                Ray mouseRay = Camera.main.ScreenPointToRay(Input.mousePosition);
+                float midPoint = (transform.position - Camera.main.transform.position).magnitude;
+                Vector3 destination = mouseRay.origin + mouseRay.direction * midPoint;
+                destination.y = transform.position.y + 1.5f;
+
+                playerShots.direction = destination;
                 actionsListShoot.Add(playerShots);
             }
 
@@ -376,14 +383,16 @@ public class PlayerController : MonoBehaviour
 
                     playerShots.shoot = false;
                     playerShots.timePressed = idleTimerShoot;
-                    playerShots.totalTime = Time.time;
+                    playerShots.totalTime = Time.time - resetTime[nResets];
+                    playerShots.direction = Vector3.zero;
                     actionsListShoot.Add(playerShots);
                 }
                 else
                 {
                     playerShots.shoot = false;
-                    playerShots.timePressed = Time.time;
-                    playerShots.totalTime = Time.time;
+                    playerShots.timePressed = Time.time - resetTime[nResets];
+                    playerShots.totalTime = Time.time - resetTime[nResets];
+                    playerShots.direction = Vector3.zero;
                     actionsListShoot.Add(playerShots);
                 }
 
@@ -392,21 +401,32 @@ public class PlayerController : MonoBehaviour
 
                 clip_ammo--;
 
-                gun.GetComponent<SpawnBullet>().Shoot();
+                gun.GetComponent<SpawnBullet>().Shoot(Vector3.zero);
             }
             else if (Input.GetMouseButtonDown(0))
             {
-                //Maybe play empty gun cocking here since we have no bullets left
-                empty_clip_sound.Play();
+                source.clip = empty_clip_sound;
+                source.Play();
             }
 
             // reload!
-            if (Input.GetKeyDown(KeyCode.R)) 
+            if (Input.GetKeyDown(KeyCode.R))
             {
-                clip_ammo = max_clip_ammo;
-                reload_sound.Play();
+                source.clip = reload_sound;
+                source.Play();
+                StartCoroutine(Reloadinger());
             }
         }
+    }
+
+    IEnumerator Reloadinger()
+    {
+        GameObject.FindGameObjectWithTag("reload").GetComponent<Text>().enabled = true;
+        reloader.ReloadAnim();
+        yield return new WaitForSeconds(1.5f);
+        clip_ammo = max_clip_ammo;
+        reloader.EndReloadAnim();
+        GameObject.FindGameObjectWithTag("reload").GetComponent<Text>().enabled = false;
     }
 
     private void LateUpdate()

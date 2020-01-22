@@ -15,6 +15,7 @@ TagManager:
   - ViTA
   - Line1
   - Line2
+  - reload
   layers:
   - Default
   - TransparentFX
