@@ -297,28 +297,28 @@ public class PlayerController : MonoBehaviour
 
             if (Input.GetKey(KeyCode.W))
             {
-                transform.position += new Vector3(0, 0, speed);
+                transform.position += new Vector3(0, 0, speed * Time.deltaTime);
                 Input_Z = Input.GetAxis("Vertical");
                 animator.SetFloat("Input_Z", Input_Z);
                 timerW = Time.time - lastTimerW;
             }
             if (Input.GetKey(KeyCode.S))
             {
-                transform.position += new Vector3(0, 0, -speed);
+                transform.position += new Vector3(0, 0, -speed * Time.deltaTime);
                 Input_Z = Input.GetAxis("Vertical");
                 animator.SetFloat("Input_Z", Input_Z);
                 timerS = Time.time - lastTimerS;
             }
             if (Input.GetKey(KeyCode.A))
             {
-                transform.position += new Vector3(-speed, 0, 0);
+                transform.position += new Vector3(-speed * Time.deltaTime, 0, 0);
                 Input_X = Input.GetAxis("Horizontal");
                 animator.SetFloat("Input_X", Input_X);
                 timerA = Time.time - lastTimerA;
             }
             if (Input.GetKey(KeyCode.D))
             {
-                transform.position += new Vector3(speed, 0, 0);
+                transform.position += new Vector3(speed * Time.deltaTime, 0, 0);
                 Input_X = Input.GetAxis("Horizontal");
                 animator.SetFloat("Input_X", Input_X);
                 timerD = Time.time - lastTimerD;
@@ -462,7 +462,7 @@ public class PlayerController : MonoBehaviour
         clip_ammo = max_clip_ammo;
 
         // Position reset
-        transform.position = startingPosition;
+        transform.position =    startingPosition;
         transform.rotation = startingRotation;
 
         // Animation reset
